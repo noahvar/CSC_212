@@ -59,18 +59,13 @@ int main(int argc, char*argv[]){
     }
 
     // Loop through your collection of animals
-    // for(int i = 0; i < animals.size(); i++) {
-    //     animals[0]->Speak();
-    // }
-    animals[0]->Speak();
-    std::cout << animals[0]->GetHunger() << std::endl;
-    std::cout << animals[0]->GetThirst() << std::endl;
-
-    // Speak
-
-    // Output hunger
-
-    // Output thirst
+    for(int i = 0; i < num_of_animals; i++){
+        // Speak
+        animals[i]->Speak();
+        // Output hunger
+        // Output thirst
+        std::cout << animals[i]->GetHunger() << "\n" << animals[i]->GetThirst() << std::endl;
+    }
 
     return 0;
 }

@@ -21,4 +21,4 @@ add_executable(csc212_l1_2
         CSC_212_l1/Snake.h
         CSC_212_l1/Hamster.h
         CSC_212_l1/Bird.h
-        CSC_212_l1/animal.txt)
+        CSC_212_l1/animals.txt)

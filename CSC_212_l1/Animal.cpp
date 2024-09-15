@@ -14,7 +14,7 @@ float Animal::GetThirst() {
 }
 
 void Animal::Drink(float sustenance) {
-    this->hunger += sustenance;
+    this->thirst += sustenance;
 }
 
 void Animal::Eat(float sustenance){
