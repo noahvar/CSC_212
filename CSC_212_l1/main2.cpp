@@ -15,7 +15,6 @@ int main(int argc, char*argv[]){
 
     // Extract the name of the file we'll be reading from the CLA
     std::string file_name = argv[2];
-    std::cout << "File name: " << file_name << std::endl;
 
     // Create a collection (data structure) of the appropriate size to hold the # of animals we are creating
     std::vector<Animal*> animals;
