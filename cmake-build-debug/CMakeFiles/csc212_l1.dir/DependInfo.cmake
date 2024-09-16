@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/noahv/Documents/GitHub/CSC_212/CSC_212_l1/Animal.cpp" "CMakeFiles/csc212_l1.dir/CSC_212_l1/Animal.cpp.obj" "gcc" "CMakeFiles/csc212_l1.dir/CSC_212_l1/Animal.cpp.obj.d"
-  "C:/Users/noahv/Documents/GitHub/CSC_212/CSC_212_l1/main.cpp" "CMakeFiles/csc212_l1.dir/CSC_212_l1/main.cpp.obj" "gcc" "CMakeFiles/csc212_l1.dir/CSC_212_l1/main.cpp.obj.d"
+  "C:/Users/noahv/Documents/GitHub/CSC_212/l1/Animal.cpp" "CMakeFiles/csc212_l1.dir/l1/Animal.cpp.obj" "gcc" "CMakeFiles/csc212_l1.dir/l1/Animal.cpp.obj.d"
+  "C:/Users/noahv/Documents/GitHub/CSC_212/l1/main.cpp" "CMakeFiles/csc212_l1.dir/l1/main.cpp.obj" "gcc" "CMakeFiles/csc212_l1.dir/l1/main.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

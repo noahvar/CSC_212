@@ -141,80 +141,80 @@ csc212_l1_2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\csc212_l1_2.dir\build.make CMakeFiles/csc212_l1_2.dir/build
 .PHONY : csc212_l1_2/fast
 
-CSC_212_l1/Animal.obj: CSC_212_l1/Animal.cpp.obj
-.PHONY : CSC_212_l1/Animal.obj
+l1/Animal.obj: l1/Animal.cpp.obj
+.PHONY : l1/Animal.obj
 
 # target to build an object file
-CSC_212_l1/Animal.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\csc212_l1.dir\build.make CMakeFiles/csc212_l1.dir/CSC_212_l1/Animal.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\csc212_l1_2.dir\build.make CMakeFiles/csc212_l1_2.dir/CSC_212_l1/Animal.cpp.obj
-.PHONY : CSC_212_l1/Animal.cpp.obj
+l1/Animal.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\csc212_l1.dir\build.make CMakeFiles/csc212_l1.dir/l1/Animal.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\csc212_l1_2.dir\build.make CMakeFiles/csc212_l1_2.dir/l1/Animal.cpp.obj
+.PHONY : l1/Animal.cpp.obj
 
-CSC_212_l1/Animal.i: CSC_212_l1/Animal.cpp.i
-.PHONY : CSC_212_l1/Animal.i
+l1/Animal.i: l1/Animal.cpp.i
+.PHONY : l1/Animal.i
 
 # target to preprocess a source file
-CSC_212_l1/Animal.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\csc212_l1.dir\build.make CMakeFiles/csc212_l1.dir/CSC_212_l1/Animal.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\csc212_l1_2.dir\build.make CMakeFiles/csc212_l1_2.dir/CSC_212_l1/Animal.cpp.i
-.PHONY : CSC_212_l1/Animal.cpp.i
+l1/Animal.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\csc212_l1.dir\build.make CMakeFiles/csc212_l1.dir/l1/Animal.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\csc212_l1_2.dir\build.make CMakeFiles/csc212_l1_2.dir/l1/Animal.cpp.i
+.PHONY : l1/Animal.cpp.i
 
-CSC_212_l1/Animal.s: CSC_212_l1/Animal.cpp.s
-.PHONY : CSC_212_l1/Animal.s
+l1/Animal.s: l1/Animal.cpp.s
+.PHONY : l1/Animal.s
 
 # target to generate assembly for a file
-CSC_212_l1/Animal.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\csc212_l1.dir\build.make CMakeFiles/csc212_l1.dir/CSC_212_l1/Animal.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\csc212_l1_2.dir\build.make CMakeFiles/csc212_l1_2.dir/CSC_212_l1/Animal.cpp.s
-.PHONY : CSC_212_l1/Animal.cpp.s
+l1/Animal.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\csc212_l1.dir\build.make CMakeFiles/csc212_l1.dir/l1/Animal.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\csc212_l1_2.dir\build.make CMakeFiles/csc212_l1_2.dir/l1/Animal.cpp.s
+.PHONY : l1/Animal.cpp.s
 
-CSC_212_l1/main.obj: CSC_212_l1/main.cpp.obj
-.PHONY : CSC_212_l1/main.obj
+l1/main.obj: l1/main.cpp.obj
+.PHONY : l1/main.obj
 
 # target to build an object file
-CSC_212_l1/main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\csc212_l1.dir\build.make CMakeFiles/csc212_l1.dir/CSC_212_l1/main.cpp.obj
-.PHONY : CSC_212_l1/main.cpp.obj
+l1/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\csc212_l1.dir\build.make CMakeFiles/csc212_l1.dir/l1/main.cpp.obj
+.PHONY : l1/main.cpp.obj
 
-CSC_212_l1/main.i: CSC_212_l1/main.cpp.i
-.PHONY : CSC_212_l1/main.i
+l1/main.i: l1/main.cpp.i
+.PHONY : l1/main.i
 
 # target to preprocess a source file
-CSC_212_l1/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\csc212_l1.dir\build.make CMakeFiles/csc212_l1.dir/CSC_212_l1/main.cpp.i
-.PHONY : CSC_212_l1/main.cpp.i
+l1/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\csc212_l1.dir\build.make CMakeFiles/csc212_l1.dir/l1/main.cpp.i
+.PHONY : l1/main.cpp.i
 
-CSC_212_l1/main.s: CSC_212_l1/main.cpp.s
-.PHONY : CSC_212_l1/main.s
+l1/main.s: l1/main.cpp.s
+.PHONY : l1/main.s
 
 # target to generate assembly for a file
-CSC_212_l1/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\csc212_l1.dir\build.make CMakeFiles/csc212_l1.dir/CSC_212_l1/main.cpp.s
-.PHONY : CSC_212_l1/main.cpp.s
+l1/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\csc212_l1.dir\build.make CMakeFiles/csc212_l1.dir/l1/main.cpp.s
+.PHONY : l1/main.cpp.s
 
-CSC_212_l1/main2.obj: CSC_212_l1/main2.cpp.obj
-.PHONY : CSC_212_l1/main2.obj
+l1/main2.obj: l1/main2.cpp.obj
+.PHONY : l1/main2.obj
 
 # target to build an object file
-CSC_212_l1/main2.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\csc212_l1_2.dir\build.make CMakeFiles/csc212_l1_2.dir/CSC_212_l1/main2.cpp.obj
-.PHONY : CSC_212_l1/main2.cpp.obj
+l1/main2.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\csc212_l1_2.dir\build.make CMakeFiles/csc212_l1_2.dir/l1/main2.cpp.obj
+.PHONY : l1/main2.cpp.obj
 
-CSC_212_l1/main2.i: CSC_212_l1/main2.cpp.i
-.PHONY : CSC_212_l1/main2.i
+l1/main2.i: l1/main2.cpp.i
+.PHONY : l1/main2.i
 
 # target to preprocess a source file
-CSC_212_l1/main2.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\csc212_l1_2.dir\build.make CMakeFiles/csc212_l1_2.dir/CSC_212_l1/main2.cpp.i
-.PHONY : CSC_212_l1/main2.cpp.i
+l1/main2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\csc212_l1_2.dir\build.make CMakeFiles/csc212_l1_2.dir/l1/main2.cpp.i
+.PHONY : l1/main2.cpp.i
 
-CSC_212_l1/main2.s: CSC_212_l1/main2.cpp.s
-.PHONY : CSC_212_l1/main2.s
+l1/main2.s: l1/main2.cpp.s
+.PHONY : l1/main2.s
 
 # target to generate assembly for a file
-CSC_212_l1/main2.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\csc212_l1_2.dir\build.make CMakeFiles/csc212_l1_2.dir/CSC_212_l1/main2.cpp.s
-.PHONY : CSC_212_l1/main2.cpp.s
+l1/main2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\csc212_l1_2.dir\build.make CMakeFiles/csc212_l1_2.dir/l1/main2.cpp.s
+.PHONY : l1/main2.cpp.s
 
 # Help Target
 help:
@@ -226,15 +226,15 @@ help:
 	@echo ... rebuild_cache
 	@echo ... csc212_l1
 	@echo ... csc212_l1_2
-	@echo ... CSC_212_l1/Animal.obj
-	@echo ... CSC_212_l1/Animal.i
-	@echo ... CSC_212_l1/Animal.s
-	@echo ... CSC_212_l1/main.obj
-	@echo ... CSC_212_l1/main.i
-	@echo ... CSC_212_l1/main.s
-	@echo ... CSC_212_l1/main2.obj
-	@echo ... CSC_212_l1/main2.i
-	@echo ... CSC_212_l1/main2.s
+	@echo ... l1/Animal.obj
+	@echo ... l1/Animal.i
+	@echo ... l1/Animal.s
+	@echo ... l1/main.obj
+	@echo ... l1/main.i
+	@echo ... l1/main.s
+	@echo ... l1/main2.obj
+	@echo ... l1/main2.i
+	@echo ... l1/main2.s
 .PHONY : help
 
 

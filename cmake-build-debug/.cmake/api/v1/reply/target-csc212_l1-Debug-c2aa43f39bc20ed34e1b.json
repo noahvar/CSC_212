@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "csc212_l1_2.exe"
+			"path" : "csc212_l1.exe"
 		},
 		{
-			"path" : "csc212_l1_2.pdb"
+			"path" : "csc212_l1.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -27,7 +27,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 15,
+				"line" : 6,
 				"parent" : 0
 			}
 		]
@@ -57,7 +57,7 @@
 			]
 		}
 	],
-	"id" : "csc212_l1_2::@6890427a1f51a3e7e1df",
+	"id" : "csc212_l1::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -77,8 +77,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "csc212_l1_2",
-	"nameOnDisk" : "csc212_l1_2.exe",
+	"name" : "csc212_l1",
+	"nameOnDisk" : "csc212_l1.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -105,13 +105,6 @@
 				6,
 				7
 			]
-		},
-		{
-			"name" : "",
-			"sourceIndexes" : 
-			[
-				8
-			]
 		}
 	],
 	"sources" : 
@@ -119,49 +112,44 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "CSC_212_l1/main2.cpp",
+			"path" : "l1/main.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "CSC_212_l1/Animal.cpp",
+			"path" : "l1/Animal.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "CSC_212_l1/Animal.h",
+			"path" : "l1/Animal.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
-			"path" : "CSC_212_l1/Cat.h",
+			"path" : "l1/Cat.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
-			"path" : "CSC_212_l1/Dog.h",
+			"path" : "l1/Dog.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
-			"path" : "CSC_212_l1/Snake.h",
+			"path" : "l1/Snake.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
-			"path" : "CSC_212_l1/Hamster.h",
+			"path" : "l1/Hamster.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
-			"path" : "CSC_212_l1/Bird.h",
+			"path" : "l1/Bird.h",
 			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"path" : "CSC_212_l1/animals.txt",
-			"sourceGroupIndex" : 2
 		}
 	],
 	"type" : "EXECUTABLE"

@@ -68,44 +68,44 @@ include CMakeFiles/csc212_l1_2.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/csc212_l1_2.dir/flags.make
 
-CMakeFiles/csc212_l1_2.dir/CSC_212_l1/main2.cpp.obj: CMakeFiles/csc212_l1_2.dir/flags.make
-CMakeFiles/csc212_l1_2.dir/CSC_212_l1/main2.cpp.obj: C:/Users/noahv/Documents/GitHub/CSC_212/CSC_212_l1/main2.cpp
-CMakeFiles/csc212_l1_2.dir/CSC_212_l1/main2.cpp.obj: CMakeFiles/csc212_l1_2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\noahv\Documents\GitHub\CSC_212\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/csc212_l1_2.dir/CSC_212_l1/main2.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/csc212_l1_2.dir/CSC_212_l1/main2.cpp.obj -MF CMakeFiles\csc212_l1_2.dir\CSC_212_l1\main2.cpp.obj.d -o CMakeFiles\csc212_l1_2.dir\CSC_212_l1\main2.cpp.obj -c C:\Users\noahv\Documents\GitHub\CSC_212\CSC_212_l1\main2.cpp
+CMakeFiles/csc212_l1_2.dir/l1/main2.cpp.obj: CMakeFiles/csc212_l1_2.dir/flags.make
+CMakeFiles/csc212_l1_2.dir/l1/main2.cpp.obj: C:/Users/noahv/Documents/GitHub/CSC_212/l1/main2.cpp
+CMakeFiles/csc212_l1_2.dir/l1/main2.cpp.obj: CMakeFiles/csc212_l1_2.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\noahv\Documents\GitHub\CSC_212\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/csc212_l1_2.dir/l1/main2.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/csc212_l1_2.dir/l1/main2.cpp.obj -MF CMakeFiles\csc212_l1_2.dir\l1\main2.cpp.obj.d -o CMakeFiles\csc212_l1_2.dir\l1\main2.cpp.obj -c C:\Users\noahv\Documents\GitHub\CSC_212\l1\main2.cpp
 
-CMakeFiles/csc212_l1_2.dir/CSC_212_l1/main2.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/csc212_l1_2.dir/CSC_212_l1/main2.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\noahv\Documents\GitHub\CSC_212\CSC_212_l1\main2.cpp > CMakeFiles\csc212_l1_2.dir\CSC_212_l1\main2.cpp.i
+CMakeFiles/csc212_l1_2.dir/l1/main2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/csc212_l1_2.dir/l1/main2.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\noahv\Documents\GitHub\CSC_212\l1\main2.cpp > CMakeFiles\csc212_l1_2.dir\l1\main2.cpp.i
 
-CMakeFiles/csc212_l1_2.dir/CSC_212_l1/main2.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/csc212_l1_2.dir/CSC_212_l1/main2.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\noahv\Documents\GitHub\CSC_212\CSC_212_l1\main2.cpp -o CMakeFiles\csc212_l1_2.dir\CSC_212_l1\main2.cpp.s
+CMakeFiles/csc212_l1_2.dir/l1/main2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/csc212_l1_2.dir/l1/main2.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\noahv\Documents\GitHub\CSC_212\l1\main2.cpp -o CMakeFiles\csc212_l1_2.dir\l1\main2.cpp.s
 
-CMakeFiles/csc212_l1_2.dir/CSC_212_l1/Animal.cpp.obj: CMakeFiles/csc212_l1_2.dir/flags.make
-CMakeFiles/csc212_l1_2.dir/CSC_212_l1/Animal.cpp.obj: C:/Users/noahv/Documents/GitHub/CSC_212/CSC_212_l1/Animal.cpp
-CMakeFiles/csc212_l1_2.dir/CSC_212_l1/Animal.cpp.obj: CMakeFiles/csc212_l1_2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\noahv\Documents\GitHub\CSC_212\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/csc212_l1_2.dir/CSC_212_l1/Animal.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/csc212_l1_2.dir/CSC_212_l1/Animal.cpp.obj -MF CMakeFiles\csc212_l1_2.dir\CSC_212_l1\Animal.cpp.obj.d -o CMakeFiles\csc212_l1_2.dir\CSC_212_l1\Animal.cpp.obj -c C:\Users\noahv\Documents\GitHub\CSC_212\CSC_212_l1\Animal.cpp
+CMakeFiles/csc212_l1_2.dir/l1/Animal.cpp.obj: CMakeFiles/csc212_l1_2.dir/flags.make
+CMakeFiles/csc212_l1_2.dir/l1/Animal.cpp.obj: C:/Users/noahv/Documents/GitHub/CSC_212/l1/Animal.cpp
+CMakeFiles/csc212_l1_2.dir/l1/Animal.cpp.obj: CMakeFiles/csc212_l1_2.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\noahv\Documents\GitHub\CSC_212\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/csc212_l1_2.dir/l1/Animal.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/csc212_l1_2.dir/l1/Animal.cpp.obj -MF CMakeFiles\csc212_l1_2.dir\l1\Animal.cpp.obj.d -o CMakeFiles\csc212_l1_2.dir\l1\Animal.cpp.obj -c C:\Users\noahv\Documents\GitHub\CSC_212\l1\Animal.cpp
 
-CMakeFiles/csc212_l1_2.dir/CSC_212_l1/Animal.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/csc212_l1_2.dir/CSC_212_l1/Animal.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\noahv\Documents\GitHub\CSC_212\CSC_212_l1\Animal.cpp > CMakeFiles\csc212_l1_2.dir\CSC_212_l1\Animal.cpp.i
+CMakeFiles/csc212_l1_2.dir/l1/Animal.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/csc212_l1_2.dir/l1/Animal.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\noahv\Documents\GitHub\CSC_212\l1\Animal.cpp > CMakeFiles\csc212_l1_2.dir\l1\Animal.cpp.i
 
-CMakeFiles/csc212_l1_2.dir/CSC_212_l1/Animal.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/csc212_l1_2.dir/CSC_212_l1/Animal.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\noahv\Documents\GitHub\CSC_212\CSC_212_l1\Animal.cpp -o CMakeFiles\csc212_l1_2.dir\CSC_212_l1\Animal.cpp.s
+CMakeFiles/csc212_l1_2.dir/l1/Animal.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/csc212_l1_2.dir/l1/Animal.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\noahv\Documents\GitHub\CSC_212\l1\Animal.cpp -o CMakeFiles\csc212_l1_2.dir\l1\Animal.cpp.s
 
 # Object files for target csc212_l1_2
 csc212_l1_2_OBJECTS = \
-"CMakeFiles/csc212_l1_2.dir/CSC_212_l1/main2.cpp.obj" \
-"CMakeFiles/csc212_l1_2.dir/CSC_212_l1/Animal.cpp.obj"
+"CMakeFiles/csc212_l1_2.dir/l1/main2.cpp.obj" \
+"CMakeFiles/csc212_l1_2.dir/l1/Animal.cpp.obj"
 
 # External object files for target csc212_l1_2
 csc212_l1_2_EXTERNAL_OBJECTS =
 
-csc212_l1_2.exe: CMakeFiles/csc212_l1_2.dir/CSC_212_l1/main2.cpp.obj
-csc212_l1_2.exe: CMakeFiles/csc212_l1_2.dir/CSC_212_l1/Animal.cpp.obj
+csc212_l1_2.exe: CMakeFiles/csc212_l1_2.dir/l1/main2.cpp.obj
+csc212_l1_2.exe: CMakeFiles/csc212_l1_2.dir/l1/Animal.cpp.obj
 csc212_l1_2.exe: CMakeFiles/csc212_l1_2.dir/build.make
 csc212_l1_2.exe: CMakeFiles/csc212_l1_2.dir/linkLibs.rsp
 csc212_l1_2.exe: CMakeFiles/csc212_l1_2.dir/objects1.rsp

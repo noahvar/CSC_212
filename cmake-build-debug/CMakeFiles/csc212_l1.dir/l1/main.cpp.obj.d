@@ -1,6 +1,7 @@
-CMakeFiles/csc212_l1_2.dir/CSC_212_l1/Animal.cpp.obj: \
- C:\Users\noahv\Documents\GitHub\CSC_212\CSC_212_l1\Animal.cpp \
- C:\Users\noahv\Documents\GitHub\CSC_212\CSC_212_l1\Animal.h \
+CMakeFiles/csc212_l1.dir/l1/main.cpp.obj: \
+ C:\Users\noahv\Documents\GitHub\CSC_212\l1\main.cpp \
+ C:\Users\noahv\Documents\GitHub\CSC_212\l1\Cat.h \
+ C:\Users\noahv\Documents\GitHub\CSC_212\l1\Animal.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -133,4 +134,8 @@ CMakeFiles/csc212_l1_2.dir/CSC_212_l1/Animal.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_ios.tcc \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream.tcc \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
- C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc
+ C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
+ C:\Users\noahv\Documents\GitHub\CSC_212\l1\Dog.h \
+ C:\Users\noahv\Documents\GitHub\CSC_212\l1\Hamster.h \
+ C:\Users\noahv\Documents\GitHub\CSC_212\l1\Bird.h \
+ C:\Users\noahv\Documents\GitHub\CSC_212\l1\Snake.h
