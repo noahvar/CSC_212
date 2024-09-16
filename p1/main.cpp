@@ -4,8 +4,8 @@
 
 int main(int argc, char *argv[]) {
 
-    Maze maze(4, 4);
-    maze.printMaze();
+    Maze maze(std::stoi(argv[2]), std::stoi(argv[3]));
+    maze.printMaze(argv[4]);
 
     return 0;
 }

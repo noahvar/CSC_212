@@ -17,7 +17,7 @@ public:
 
     Maze(int rows, int cols); //constructor
     ~Maze(); //destructor
-    void printMaze(); //print
+    void printMaze(std::string filename); //print
 };
 
 #endif
