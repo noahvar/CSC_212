@@ -67,8 +67,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/noahv/Documents/GitHub/CSC_212/cmake-build-debug",
-		"source" : "C:/Users/noahv/Documents/GitHub/CSC_212"
+		"build" : "C:/Users/noahv/CLionProjects/CSC_212/cmake-build-debug",
+		"source" : "C:/Users/noahv/CLionProjects/CSC_212"
 	},
 	"version" : 
 	{
