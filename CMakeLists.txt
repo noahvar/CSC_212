@@ -22,3 +22,7 @@ add_executable(csc212_l1_2
         l1/Hamster.h
         l1/Bird.h
         l1/animals.txt)
+add_executable(p1
+        p1/main.cpp
+        p1/maze.cpp
+        p1/maze.h)

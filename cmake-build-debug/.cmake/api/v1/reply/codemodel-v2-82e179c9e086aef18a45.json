@@ -16,7 +16,8 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					]
 				}
 			],
@@ -32,7 +33,8 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					]
 				}
 			],
@@ -50,6 +52,13 @@
 					"id" : "csc212_l1_2::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-csc212_l1_2-Debug-fd5849a4e0667842a1f4.json",
 					"name" : "csc212_l1_2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "p1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-p1-Debug-231ccde3934433dfeeca.json",
+					"name" : "p1",
 					"projectIndex" : 0
 				}
 			]

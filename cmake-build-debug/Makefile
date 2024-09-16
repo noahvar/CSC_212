@@ -141,6 +141,19 @@ csc212_l1_2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\csc212_l1_2.dir\build.make CMakeFiles/csc212_l1_2.dir/build
 .PHONY : csc212_l1_2/fast
 
+#=============================================================================
+# Target rules for targets named p1
+
+# Build rule for target.
+p1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 p1
+.PHONY : p1
+
+# fast build rule for target.
+p1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p1.dir\build.make CMakeFiles/p1.dir/build
+.PHONY : p1/fast
+
 l1/Animal.obj: l1/Animal.cpp.obj
 .PHONY : l1/Animal.obj
 
@@ -216,6 +229,54 @@ l1/main2.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\csc212_l1_2.dir\build.make CMakeFiles/csc212_l1_2.dir/l1/main2.cpp.s
 .PHONY : l1/main2.cpp.s
 
+p1/main.obj: p1/main.cpp.obj
+.PHONY : p1/main.obj
+
+# target to build an object file
+p1/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p1.dir\build.make CMakeFiles/p1.dir/p1/main.cpp.obj
+.PHONY : p1/main.cpp.obj
+
+p1/main.i: p1/main.cpp.i
+.PHONY : p1/main.i
+
+# target to preprocess a source file
+p1/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p1.dir\build.make CMakeFiles/p1.dir/p1/main.cpp.i
+.PHONY : p1/main.cpp.i
+
+p1/main.s: p1/main.cpp.s
+.PHONY : p1/main.s
+
+# target to generate assembly for a file
+p1/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p1.dir\build.make CMakeFiles/p1.dir/p1/main.cpp.s
+.PHONY : p1/main.cpp.s
+
+p1/maze.obj: p1/maze.cpp.obj
+.PHONY : p1/maze.obj
+
+# target to build an object file
+p1/maze.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p1.dir\build.make CMakeFiles/p1.dir/p1/maze.cpp.obj
+.PHONY : p1/maze.cpp.obj
+
+p1/maze.i: p1/maze.cpp.i
+.PHONY : p1/maze.i
+
+# target to preprocess a source file
+p1/maze.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p1.dir\build.make CMakeFiles/p1.dir/p1/maze.cpp.i
+.PHONY : p1/maze.cpp.i
+
+p1/maze.s: p1/maze.cpp.s
+.PHONY : p1/maze.s
+
+# target to generate assembly for a file
+p1/maze.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p1.dir\build.make CMakeFiles/p1.dir/p1/maze.cpp.s
+.PHONY : p1/maze.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -226,6 +287,7 @@ help:
 	@echo ... rebuild_cache
 	@echo ... csc212_l1
 	@echo ... csc212_l1_2
+	@echo ... p1
 	@echo ... l1/Animal.obj
 	@echo ... l1/Animal.i
 	@echo ... l1/Animal.s
@@ -235,6 +297,12 @@ help:
 	@echo ... l1/main2.obj
 	@echo ... l1/main2.i
 	@echo ... l1/main2.s
+	@echo ... p1/main.obj
+	@echo ... p1/main.i
+	@echo ... p1/main.s
+	@echo ... p1/maze.obj
+	@echo ... p1/maze.i
+	@echo ... p1/maze.s
 .PHONY : help
 
 

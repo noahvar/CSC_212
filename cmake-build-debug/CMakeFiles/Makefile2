@@ -64,6 +64,7 @@ CMAKE_BINARY_DIR = C:\Users\noahv\Documents\GitHub\CSC_212\cmake-build-debug
 # The main recursive "all" target.
 all: CMakeFiles/csc212_l1.dir/all
 all: CMakeFiles/csc212_l1_2.dir/all
+all: CMakeFiles/p1.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -73,6 +74,7 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/csc212_l1.dir/clean
 clean: CMakeFiles/csc212_l1_2.dir/clean
+clean: CMakeFiles/p1.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -126,6 +128,32 @@ csc212_l1_2: CMakeFiles/csc212_l1_2.dir/rule
 CMakeFiles/csc212_l1_2.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\csc212_l1_2.dir\build.make CMakeFiles/csc212_l1_2.dir/clean
 .PHONY : CMakeFiles/csc212_l1_2.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/p1.dir
+
+# All Build rule for target.
+CMakeFiles/p1.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p1.dir\build.make CMakeFiles/p1.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p1.dir\build.make CMakeFiles/p1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\noahv\Documents\GitHub\CSC_212\cmake-build-debug\CMakeFiles --progress-num=7,8,9 "Built target p1"
+.PHONY : CMakeFiles/p1.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/p1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\noahv\Documents\GitHub\CSC_212\cmake-build-debug\CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/p1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\noahv\Documents\GitHub\CSC_212\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/p1.dir/rule
+
+# Convenience name for target.
+p1: CMakeFiles/p1.dir/rule
+.PHONY : p1
+
+# clean rule for target.
+CMakeFiles/p1.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p1.dir\build.make CMakeFiles/p1.dir/clean
+.PHONY : CMakeFiles/p1.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
