@@ -8,10 +8,11 @@
 //constructor
 Maze::Maze(int seed, int rows, int cols) : seed(seed), n(rows), m(cols), mazeArray(nullptr), visited(nullptr)
 {
-    //initializes expPath, current cell, and exit cell
+    //initializes expPath, current cell, exit cell, and seed
     expPath.push_back({0,0});
     current = expPath[0];
     exit = {n-1,m-1};
+    std::srand(seed);
 
     //creates maze default maze
     allocateMaze();
@@ -116,22 +117,22 @@ void Maze::generateMaze(Maze& maze)
         visited[current.first][current.second] = true;//mark current as visited
 
         addNeighbors();//get current's neighbors and put into neighbor array
+
+        //if neighbors are empty than you have reached a dead end
         if(neighbors.empty()) {
             expPath.pop_back();
             current = expPath.back();
             continue;
         }
 
-        //randomly select neighbor
-        std::srand(seed);
         if(!neighbors.empty())
         {
             int idx = std::rand() / ((RAND_MAX + 1u) / neighbors.size());
-            neighbors[idx] = current;
+            current = neighbors[idx];
         }
 
         //delete wall between current and neighbors[idx]
-
+        removeWall();
 
         //push the current cell into expPath
         expPath.push_back(current);
@@ -140,11 +141,30 @@ void Maze::generateMaze(Maze& maze)
     }
 }
 
-void addNeighbours()
+void Maze::addNeighbors()
 {
-    //only add neighbors that are within valid array and have not been visited
+    //add all neighbors to array
+    neighbors = {
+        {current.first+1,current.second},
+        {current.first,current.second+1},
+        {current.first-1,current.second},
+        {current.first,current.second-1}
+    };
+
+    //remove neighbors that are out of range or that are visited
+    for(int i = 0; i < neighbors.size();)
+    {
+        if(neighbors[i].first < 0 || neighbors[i].second < 0 || neighbors[i].first == n || neighbors[i].second == m || visited[neighbors[i].first][neighbors[i].second] == true)
+        {
+            neighbors.erase(neighbors.begin() + i);
+        }
+        else
+        {
+            i++;
+        }
+    }
 }
-void removeWall()
+void Maze::removeWall()
 {
 
 }

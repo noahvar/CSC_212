@@ -19,7 +19,8 @@ private:
     int seed; // seed for random number generator
     std::pair<int, int> exit; // exit cell
     std::pair<int, int> current; //pair of ints to represent current cell
-    std::vector<std::pair<int, int>> neighbors; //dynamic array of neighbors coords
+    std::vector<std::pair<int, int>> neighbors; //holds ALL neighbors
+    std::vector<std::pair<int, int>> tempNeighbors; //holds neighbors you CAN move to
     std::vector<std::pair<int, int>> expPath; //dynamic array to pop and push exploration path
     int** mazeArray;
     bool** visited; // n*m 2D array of visited and unvisited cells
