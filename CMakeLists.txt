@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.29)
-project(csc212_l1)
+project(csc212_l1 )
 
 set(CMAKE_CXX_STANDARD 11)
 
@@ -22,6 +22,10 @@ add_executable(csc212_l1_2
         l1/Hamster.h
         l1/Bird.h
         l1/animals.txt)
+add_executable(l2
+        l2/euler.cpp)
+add_executable(l2_2
+        l2/fib.cpp)
 add_executable(p1
         p1/main.cpp
         p1/maze.cpp
