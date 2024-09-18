@@ -1,59 +1,95 @@
 #include "maze.h"
 #include <iostream>
+#include <vector>
 #include <random>
 #include <fstream>
+#include <utility>
 
 //constructor
-Maze::Maze(int rows, int cols) : n(rows), m(cols) {
+Maze::Maze(int rows, int cols) : n(rows), m(cols), mazeArray(nullptr), visited(nullptr)
+{
+    //creates maze default maze
     allocateMaze();
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < m; j++) {
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < m; j++)
+        {
             mazeArray[i][j] = 15;
         }
     }
     mazeArray[0][0] = 7;
-    mazeArray[n-1][m-1] = 11;
+    mazeArray[n - 1][m - 1] = 11;
+
+    //creates default visited 2D array
+    for (int i = 1; i < n; i++)
+    {
+        for (int j = 1; j < m; j++)
+        {
+            visited[i][j] = false;
+        }
+    }
 }
 
 //destructor
-Maze::~Maze() {
+Maze::~Maze()
+{
     deallocateMaze();
 }
 
-
-//maze allocation
-void Maze::allocateMaze() {
+//maze and visited allocation
+void Maze::allocateMaze()
+{
     mazeArray = new int*[n];
-    for(int i = 0; i < n; i++) {
+    for(int i = 0; i < n; i++)
+    {
         mazeArray[i] = new int[m];
+    }
+
+    visited = new bool*[false];
+    for(int i = 0; i < n; i++)
+    {
+        visited[i] = new bool[m];
     }
 }
 
-//maze deallocation
-void Maze::deallocateMaze() {
-    for(int i = 0; i < n; i++) {
+//maze and visited deallocation
+void Maze::deallocateMaze()
+{
+    for(int i = 0; i < n; i++)
+    {
         delete[] mazeArray[i];
     }
     delete[] mazeArray;
+
+    for(int i = 0; i < n; i++)
+    {
+        delete[] visited[i];
+    }
+    delete[] visited;
 }
 
 //print
-void Maze::printMaze(std::string filename) {
+void Maze::printMaze(std::string filename)
+{
 
     //open outpute file
     std::ofstream outFile(filename);
 
     //check if it opened
-    if(!outFile) {
+    if(!outFile)
+    {
         std::cerr << "Error opening file " << filename << std::endl;
     }
 
     //print to terminal and to output file
-    for(int i = 0; i < n; i++) {
-        for(int j = 0; j < m; j++) {
+    for(int i = 0; i < n; i++)
+        {
+        for(int j = 0; j < m; j++)
+            {
             std::cout << mazeArray[i][j] << " ";
             outFile << mazeArray[i][j];//write value
-            if(j<m-1) {
+            if(j<m-1)
+            {
                 outFile << " "; //add spaces in between cols
             }
         }
@@ -62,4 +98,10 @@ void Maze::printMaze(std::string filename) {
     }
     outFile.close();//close file when done
 }
+
+void Maze::generateMaze(int seed)
+{
+
+}
+
 
