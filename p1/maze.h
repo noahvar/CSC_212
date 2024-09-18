@@ -17,19 +17,23 @@ private:
     int n; //rows
     int m; //columns
     int seed; // seed for random number generator
+    std::pair<int, int> exit = {n-1, m-1}; // exit cell
+    std::pair<int, int> current = {0,0}; //pair of ints to represent current cell
     std::vector<std::pair<int, int>> neighbors; //dynamic array of neighbors coords
+    std::vector<std::pair<int, int>> expPath; //dynamic array to pop and push visited cells
     int** mazeArray;
     bool** visited; // n*m 2D array of visited and unvisited cells
 
+    void checkNeighbors();
     void allocateMaze();
     void deallocateMaze();
 
 public:
 
-    Maze(int rows, int cols); //constructor
+    Maze(int rows, int cols, int seed); //constructor
     ~Maze(); //destructor
     void printMaze(std::string filename); //print
-    void generateMaze(int seed);//randomly deletes walls of the mazeArray
+    void generateMaze(Maze& maze);//randomly deletes walls of the mazeArray
 };
 
 #endif
