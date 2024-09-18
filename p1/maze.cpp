@@ -108,7 +108,7 @@ void Maze::generateMaze(Maze& maze)
         //get current's neighbors and put into neighbor array
         //randomly select neighbor
         //delete wall between current and selected
-        //make selected current
+        //make selected cell the current
         //repeat
     }
 }
