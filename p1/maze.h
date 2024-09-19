@@ -10,6 +10,7 @@
 #include <random>
 #include <fstream>
 #include <utility>
+#include <algorithm>
 
 class Maze
 {
@@ -17,14 +18,15 @@ private:
     int n; //rows
     int m; //columns
     int seed; // seed for random number generator
+    std::pair<int, int> previous; //cell visited before current cell
     std::pair<int, int> exit; // exit cell
     std::pair<int, int> current; //pair of ints to represent current cell
     std::vector<std::pair<int, int>> neighbors; //holds ALL neighbors
-    std::vector<std::pair<int, int>> tempNeighbors; //holds neighbors you CAN move to
     std::vector<std::pair<int, int>> expPath; //dynamic array to pop and push exploration path
     int** mazeArray;
     bool** visited; // n*m 2D array of visited and unvisited cells
 
+    bool isMazeFullyVisited();
     void addNeighbors();
     void removeWall();
     void allocateMaze();
@@ -32,7 +34,7 @@ private:
 
 public:
 
-    Maze(int rows, int cols, int seed); //constructor
+    Maze(int seed, int rows, int cols); //constructor
     ~Maze(); //destructor
     void printMaze(std::string filename); //print
     void generateMaze(Maze& maze);//randomly deletes walls of the mazeArray

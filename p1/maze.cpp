@@ -23,8 +23,9 @@ Maze::Maze(int seed, int rows, int cols) : seed(seed), n(rows), m(cols), mazeArr
             mazeArray[i][j] = 15;
         }
     }
-    mazeArray[0][0] = 7;
+
     mazeArray[n - 1][m - 1] = 11;
+    mazeArray[0][0] = 7;
 
     //creates default visited 2D array
     for (int i = 0; i < n; i++)
@@ -107,7 +108,14 @@ void Maze::printMaze(std::string filename)
 
 void Maze::generateMaze(Maze& maze)
 {
-    while(current != exit)
+    //check for edge case (1x1 grid)
+    if(n == 1 && m == 1)
+    {
+        mazeArray[current.first][current.second] -= 4;
+        return;
+    }
+
+    while(!isMazeFullyVisited())
     {
         /*
          *expPath[0] = {0, 0}
@@ -118,24 +126,29 @@ void Maze::generateMaze(Maze& maze)
 
         addNeighbors();//get current's neighbors and put into neighbor array
 
-        //if neighbors are empty than you have reached a dead end
+        //if neighbors are empty then you have reached a dead end
         if(neighbors.empty()) {
             expPath.pop_back();
             current = expPath.back();
             continue;
         }
 
+        //moving squares
         if(!neighbors.empty())
         {
+            //selecting random cell to move to
             int idx = std::rand() / ((RAND_MAX + 1u) / neighbors.size());
-            current = neighbors[idx];
-        }
 
-        //delete wall between current and neighbors[idx]
-        removeWall();
+            previous = current; //before moving cells remember this cell as previous
+
+            current = neighbors[idx]; //moving to new square
+        }
 
         //push the current cell into expPath
         expPath.push_back(current);
+
+        //delete wall between current and neighbors[idx]
+        removeWall();
 
         //repeat
     }
@@ -166,7 +179,53 @@ void Maze::addNeighbors()
 }
 void Maze::removeWall()
 {
+    //delete wall between current and neighbors[idx]
+    /*
+     *current coords are coords to where you have moved
+     *(find way to delete the wall between this and previous)
+     */
+
+    //check if moved NORTH
+    if(current.first == (previous.first-1))
+    {
+        mazeArray[current.first][current.second] -= 4;
+        mazeArray[previous.first][previous.second] -= 8;
+    }
+    //check if moved SOUTH
+    else if(current.first == (previous.first+1))
+    {
+        mazeArray[current.first][current.second] -= 8;
+        mazeArray[previous.first][previous.second] -= 4;
+    }
+    //check if moved EAST
+    else if(current.second == (previous.second+1))
+    {
+        mazeArray[current.first][current.second] -= 1;
+        mazeArray[previous.first][previous.second] -= 2;
+    }
+    //check if moved WEST
+    else if(current.second == (previous.second-1))
+    {
+        mazeArray[current.first][current.second] -= 2;
+        mazeArray[previous.first][previous.second] -= 1;
+    }
 
 }
+bool Maze::isMazeFullyVisited()
+{
+    for(int i = 0; i < n; i++)
+    {
+        for(int j = 0; j < m; j++)
+        {
+            if(!visited[i][j])
+            {
+                return false;
+            }
+        }
+    }
+    return true;
+}
+
+
 
 
