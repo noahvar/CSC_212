@@ -157,12 +157,13 @@ void Maze::generateMaze(Maze& maze)
 void Maze::addNeighbors()
 {
     //add all neighbors to array
-    neighbors = {
-        {current.first+1,current.second},
-        {current.first,current.second+1},
-        {current.first-1,current.second},
-        {current.first,current.second-1}
-    };
+    //newer version
+     neighbors = {
+         {current.first-1,current.second}, //North Neighbor
+         {current.first+1,current.second}, //South Neighbor
+         {current.first,current.second+1}, //East Neighbor
+         {current.first,current.second-1} //West Neighbor
+     };
 
     //remove neighbors that are out of range or that are visited
     for(int i = 0; i < neighbors.size();)
@@ -173,7 +174,7 @@ void Maze::addNeighbors()
         }
         else
         {
-            i++;
+            i++; //Move to next element if no element was erased
         }
     }
 }
