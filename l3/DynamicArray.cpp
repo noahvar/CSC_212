@@ -1,64 +1,152 @@
-#ifndef DYNAMIC_ARRAY_H
-#define DYNAMIC_ARRAY_H
+#include "DynamicArray.h"
+#include <cstring>
 
-#include <string>
+// "Fancy" way to write a default constructor.
+// Note: The other constructors can *NOT* be written this way!
+DynamicArray::DynamicArray()
+    : m_length(0), m_capacity(1), m_scaling_factor(2.0), m_data(new int[1]) {
+}
+// default constructor with a scaling factor, creates an array with capacity = capacity
+DynamicArray::DynamicArray(double scaling_factor, unsigned int capacity) {
+    //..............
+    // TODO
+    //..............
+    //Initialize the variables in each of the constructors.
+}
+// fill constructor, creates an array of capacity = length, and set all values to `default_value`
+DynamicArray::DynamicArray(double scaling_factor, unsigned int length, int default_value) {
+    //..............
+    // TODO
+    //..............
+}
+//copy constructor
+DynamicArray::DynamicArray(const DynamicArray& other) {
+    // use the assignment operator
+    (*this) = other;
+}
 
-class DynamicArray {
-    private:
-        // the number of items currently in the array
-        unsigned int m_length;
-        // the number of available spaces in the array
-        unsigned int m_capacity;
-        // the scaling factor when resizing the array (always > 1)
-        double m_scaling_factor;
-        // pointer to the array of integers
-        int *m_data;
+// Destructor: destroys the dynamically allocated array on the heap
+DynamicArray::~DynamicArray() {
+    delete[] m_data;
+}
 
-    public:
-        // default constructor, capacity = 0, no need to allocate an internal array yet
-        DynamicArray();
-        // default constructor with a scaling factor, creates an array with capacity = capacity
-        DynamicArray(double scaling_factor, unsigned int capacity);
-        // fill constructor, creates an array of capacity = length, and set all values to `default_value`
-        DynamicArray(double scaling_factor, unsigned int length, int default_value);
-        // copy constructor
-        DynamicArray(const DynamicArray& other);
-        // default destructor, free memory of the array here
-        ~DynamicArray();
+unsigned int DynamicArray::get_length() {
+    return m_length;
+}
 
-        // get the number of elements in the array
-        unsigned int get_length();
-        // get the capacity of the array
-        unsigned int get_capacity();
-        // get scaling factor Needed by GUI
-        double get_scaling_factor();
-        // set the scaling factor of the array
-        void set_scaling_factor(double value);
-        // convert the vector into a printable string
-        std::string to_string();
+unsigned int DynamicArray::get_capacity() {
+    return m_capacity;
+}
 
-        // find the first occurrence of "value" in the array. Return false if the value is not found
-        bool find_first_of(int value, unsigned int* index);
-        // find the last occurrence of "value" in the array. Return false if the value is not found
-        bool find_last_of(int value, unsigned int* index);
+double DynamicArray::get_scaling_factor() {
+    return m_scaling_factor;
+}
 
-        // add a value to the end of the array (resize if necessary)
-        void append(int value);
-        // add a value to the beginning of the array (resize if necessary)
-        void prepend(int value);
-        // remove the last value from the array
-        void remove_last();
-        // remove the first value from the array
-        void remove_first();
-        // remove all elements from the array
-        // allocated memory should be deleted and the array pointer should now point to NULL
-        // capacity and length should be reset to zero
-        void clear();
+void DynamicArray::set_scaling_factor(double value) {
+    m_scaling_factor = value;
+}
 
-        // overloading the [] operator for read/write access
-        int& operator[](unsigned int index);
-        // assignment operator
-        DynamicArray& operator=(const DynamicArray &other);
-};
+std::string DynamicArray::to_string() {
+	// Initialize an empty string
+    std::string str("");
 
-#endif
+	//..............
+    // TODO
+    //
+    //use to_string function to convert each int in array
+    //then put in the empty string by iterating again.
+
+    return str;
+}
+
+bool DynamicArray::find_first_of(int value, unsigned int *index) {
+    bool found = false;
+    //..............
+    // TODO
+    //..............
+    //iterate through the array and check if value = any of the array indices.
+    return found;
+}
+
+bool DynamicArray::find_last_of(int value, unsigned int *index) {
+    bool found = false;
+    //..............
+    // TODO
+    //..............
+    //iterate through the array and check if value = an array indices if it does set it equal to a value
+    //continue until you've gone through whole array and then return the value.
+    return found;
+}
+
+void DynamicArray::append(int value) {
+    //..............
+    // TODO
+    //..............
+    //check if size = capacity if it does reallocate
+}
+
+void DynamicArray::prepend(int value) {
+    //..............
+    // TODO
+    //..............
+    //function prepend
+    //     if size == capacity
+    //         reallocate
+    //     end if
+    //     for i = size downto 1
+    //         array[i] = array[i - 1]
+    //     end for
+    //     array[0] = element
+    //     size = size + 1
+    //     end function
+}
+
+void DynamicArray::remove_last() {
+    //..............
+    // TODO
+    //..............
+    // function remove_last
+    // if size == 0
+    //     return
+    // end if
+    // size = size - 1
+    // end function
+}
+
+void DynamicArray::remove_first() {
+    //..............
+    // TODO
+    //..............
+    // function remove_first
+    // if size == 0
+    //     return
+    // end if
+    // for i = 0 to size - 2
+    //     array[i] = array[i + 1]
+    // end for
+    // size = size - 1
+    // end function
+}
+
+void DynamicArray::clear() {
+    //..............
+    // TODO
+    //..............
+    //if size = 0 exit
+    //set size = 0;
+}
+
+// Examples of "operator overloading"
+int& DynamicArray::operator[](unsigned int index) {
+    return m_data[index];
+}
+
+DynamicArray& DynamicArray::operator=(const DynamicArray &other) {
+    m_length = other.m_length;
+    m_capacity = other.m_capacity;
+    m_scaling_factor = other.m_scaling_factor;
+    m_data = new int[m_capacity];
+    std::memcpy(m_data, other.m_data, sizeof(int) * m_length);
+    // this allows statements such as (a = b = c) assuming a, b, and c are all the DynamicArray type
+    return (*this);
+}
