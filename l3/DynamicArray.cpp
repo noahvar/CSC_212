@@ -1,5 +1,6 @@
 #include "DynamicArray.h"
 #include <cstring>
+#include <iostream>
 
 // "Fancy" way to write a default constructor.
 // Note: The other constructors can *NOT* be written this way!
@@ -8,13 +9,25 @@ DynamicArray::DynamicArray()
 }
 // default constructor with a scaling factor, creates an array with capacity = capacity
 DynamicArray::DynamicArray(double scaling_factor, unsigned int capacity) {
+    //Initialize the variables in each of the constructors.
+    this->m_capacity = capacity;
+    this->m_scaling_factor = scaling_factor;
+    this->m_length = 0;
+    m_data = new int[capacity];
     //..............
     // TODO
     //..............
-    //Initialize the variables in each of the constructors.
 }
 // fill constructor, creates an array of capacity = length, and set all values to `default_value`
 DynamicArray::DynamicArray(double scaling_factor, unsigned int length, int default_value) {
+    this->m_length = length;
+    this->m_capacity = length;
+    this->m_scaling_factor = scaling_factor;
+    m_data = new int[length];
+    for (int i = 0; i < length; i++)
+    {
+        m_data[i] = default_value;
+    }
     //..............
     // TODO
     //..............
@@ -47,48 +60,98 @@ void DynamicArray::set_scaling_factor(double value) {
 }
 
 std::string DynamicArray::to_string() {
-	// Initialize an empty string
-    std::string str("");
-
-	//..............
-    // TODO
-    //
     //use to_string function to convert each int in array
     //then put in the empty string by iterating again.
 
+    // Initialize an empty string
+    std::string str("");
+    for(int i = 0; i < m_length; i++)
+    {
+        str.append(std::to_string(m_data[i]));
+    }
     return str;
+    //..............
+    // TODO
+    //
 }
 
 bool DynamicArray::find_first_of(int value, unsigned int *index) {
     bool found = false;
+
+    // Check if index pointer is valid
+    if (!index) {
+        return false;  // Return false if index pointer is null
+    }
+
+    //iterate through the array and check if value = any of the array indices.
+    for(int i = 0; i < m_length; i++)
+    {
+        if(m_data[i] == value)
+        {
+            *index = i;
+            found = true;
+            break;
+        }
+    }
+    return found;
     //..............
     // TODO
     //..............
-    //iterate through the array and check if value = any of the array indices.
-    return found;
 }
 
 bool DynamicArray::find_last_of(int value, unsigned int *index) {
     bool found = false;
+
+    //iterate through the array and check if value = an array indices if it does set it equal to a value
+    //continue until you've gone through whole array and then return the value.
+    for(int i = 0; i < get_length(); i++)
+    {
+        if(m_data[i] == value)
+        {
+            *index = i;
+            found = true;
+        }
+    }
+    return found;
     //..............
     // TODO
     //..............
-    //iterate through the array and check if value = an array indices if it does set it equal to a value
-    //continue until you've gone through whole array and then return the value.
-    return found;
 }
 
 void DynamicArray::append(int value) {
+    //check if size = capacity if it does reallocate
+    if(m_length == m_capacity)
+    {
+        //copy data to new array
+        int* new_data = new int[m_capacity * static_cast<unsigned int>(m_scaling_factor)];
+        for(int i = 0; i < m_length; i++)
+        {
+            new_data[i] = m_data[i];
+        }
+
+        //deallocate memory not being used
+        delete[] m_data;
+
+        //make m_data = to new array
+        m_data = new_data;
+        //add appended value
+        m_data[m_length] = value;
+        //scale cap by the scaling factor
+        m_capacity = m_capacity * static_cast<unsigned int>(m_scaling_factor);
+    }
+    else
+    {
+        //if space doesnt need to be reallocated just append
+        m_data[m_length] = value;
+    }
+    //increment length to account for added value
+    m_length++;
     //..............
     // TODO
     //..............
-    //check if size = capacity if it does reallocate
 }
 
 void DynamicArray::prepend(int value) {
-    //..............
-    // TODO
-    //..............
     //function prepend
     //     if size == capacity
     //         reallocate
@@ -99,6 +162,35 @@ void DynamicArray::prepend(int value) {
     //     array[0] = element
     //     size = size + 1
     //     end function
+
+    //check if size = capacity if it does reallocate
+    if(m_length == m_capacity)
+    {
+        //copy data to new array
+        int* new_data = new int[m_capacity * static_cast<unsigned int>(m_scaling_factor)];
+        for(int i = 0; i < m_length; i++)
+        {
+            new_data[i] = m_data[i];
+        }
+
+        //deallocate memory not being used
+        delete[] m_data;
+
+        //make m_data = to new array
+        m_data = new_data;
+        //scale cap by the scaling factor
+        m_capacity = m_capacity * static_cast<unsigned int>(m_scaling_factor);
+    }
+    //move all elements one index to the left
+    for(int i = m_length+1; i > 1; i--)
+    {
+        m_data[i] = m_data[i-1];
+    }
+    //index 0 should be free now
+    m_data[0] = value;
+    //..............
+    // TODO
+    //..............
 }
 
 void DynamicArray::remove_last() {

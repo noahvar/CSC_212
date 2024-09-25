@@ -1,0 +1,8 @@
+C:/Users/noahv/CLionProjects/CSC_212/cmake-build-debug/CMakeFiles/csc212_l1.dir
+C:/Users/noahv/CLionProjects/CSC_212/cmake-build-debug/CMakeFiles/csc212_l1_2.dir
+C:/Users/noahv/CLionProjects/CSC_212/cmake-build-debug/CMakeFiles/l2.dir
+C:/Users/noahv/CLionProjects/CSC_212/cmake-build-debug/CMakeFiles/l2_2.dir
+C:/Users/noahv/CLionProjects/CSC_212/cmake-build-debug/CMakeFiles/l3.dir
+C:/Users/noahv/CLionProjects/CSC_212/cmake-build-debug/CMakeFiles/p1.dir
+C:/Users/noahv/CLionProjects/CSC_212/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/noahv/CLionProjects/CSC_212/cmake-build-debug/CMakeFiles/rebuild_cache.dir

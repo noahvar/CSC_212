@@ -26,6 +26,10 @@ add_executable(l2
         l2/euler.cpp)
 add_executable(l2_2
         l2/fib.cpp)
+add_executable(l3
+        l3/main.cpp
+        l3/DynamicArray.cpp
+        l3/DynamicArray.h)
 add_executable(p1
         p1/main.cpp
         p1/maze.cpp

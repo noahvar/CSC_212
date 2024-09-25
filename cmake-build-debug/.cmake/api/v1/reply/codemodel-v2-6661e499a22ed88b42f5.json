@@ -1,0 +1,105 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.29"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "csc212_l1",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "csc212_l1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-csc212_l1-Debug-c2aa43f39bc20ed34e1b.json",
+					"name" : "csc212_l1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "csc212_l1_2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-csc212_l1_2-Debug-fd5849a4e0667842a1f4.json",
+					"name" : "csc212_l1_2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "l2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-l2-Debug-7d91e1f758fe689ab8a8.json",
+					"name" : "l2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "l2_2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-l2_2-Debug-1164ddebaf62af360ab4.json",
+					"name" : "l2_2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "l3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-l3-Debug-a96b73aa61d1e5a885ff.json",
+					"name" : "l3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "p1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-p1-Debug-2714616da2d39d111dd8.json",
+					"name" : "p1",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/noahv/CLionProjects/CSC_212/cmake-build-debug",
+		"source" : "C:/Users/noahv/CLionProjects/CSC_212"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
