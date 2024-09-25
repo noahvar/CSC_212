@@ -61,6 +61,18 @@ build CMakeFiles/csc212_l1.dir/l1/Animal.cpp.obj: CXX_COMPILER__csc212_l1_unscan
   OBJECT_DIR = CMakeFiles\csc212_l1.dir
   OBJECT_FILE_DIR = CMakeFiles\csc212_l1.dir\l1
 
+build CMakeFiles/csc212_l1.dir/l3/DynamicArray.cpp.obj: CXX_COMPILER__csc212_l1_unscanned_Debug C$:/Users/noahv/CLionProjects/CSC_212/l3/DynamicArray.cpp || cmake_object_order_depends_target_csc212_l1
+  DEP_FILE = CMakeFiles\csc212_l1.dir\l3\DynamicArray.cpp.obj.d
+  FLAGS = -g -std=gnu++11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\csc212_l1.dir
+  OBJECT_FILE_DIR = CMakeFiles\csc212_l1.dir\l3
+
+build CMakeFiles/csc212_l1.dir/l3/main.cpp.obj: CXX_COMPILER__csc212_l1_unscanned_Debug C$:/Users/noahv/CLionProjects/CSC_212/l3/main.cpp || cmake_object_order_depends_target_csc212_l1
+  DEP_FILE = CMakeFiles\csc212_l1.dir\l3\main.cpp.obj.d
+  FLAGS = -g -std=gnu++11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\csc212_l1.dir
+  OBJECT_FILE_DIR = CMakeFiles\csc212_l1.dir\l3
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target csc212_l1
@@ -69,7 +81,7 @@ build CMakeFiles/csc212_l1.dir/l1/Animal.cpp.obj: CXX_COMPILER__csc212_l1_unscan
 #############################################
 # Link the executable csc212_l1.exe
 
-build csc212_l1.exe: CXX_EXECUTABLE_LINKER__csc212_l1_Debug CMakeFiles/csc212_l1.dir/l1/main.cpp.obj CMakeFiles/csc212_l1.dir/l1/Animal.cpp.obj
+build csc212_l1.exe: CXX_EXECUTABLE_LINKER__csc212_l1_Debug CMakeFiles/csc212_l1.dir/l1/main.cpp.obj CMakeFiles/csc212_l1.dir/l1/Animal.cpp.obj CMakeFiles/csc212_l1.dir/l3/DynamicArray.cpp.obj CMakeFiles/csc212_l1.dir/l3/main.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\csc212_l1.dir
