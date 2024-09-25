@@ -150,6 +150,19 @@ void Maze::generateMaze(Maze& maze)
         //delete wall between current and neighbors[idx]
         removeWall();
 
+        //temporary output to check maze after each wall removal
+
+        std::cout << "Moving from (" << previous.first << "," << previous.second << ") to (" << current.first << "," << current.second << ")\n";
+
+        std::cout << "Maze state after wall removal:" << std::endl;
+        for (int i = 0; i < n; ++i) {
+            for (int j = 0; j < m; ++j) {
+                std::cout << mazeArray[i][j] << " ";
+            }
+            std::cout << std::endl;
+        }
+        std::cout << std::endl;
+
         //repeat
     }
 }
@@ -177,6 +190,13 @@ void Maze::addNeighbors()
             i++; //Move to next element if no element was erased
         }
     }
+
+    // temporary for loop to see output of neighbors after each move.
+     std::cout << "Current position: (" << current.first << ", " << current.second << ")\n";
+     for(int i = 0; i < neighbors.size(); i++)
+     {
+         std::cout << "N" << i << ": (" << neighbors[i].first << "," << neighbors[i].second << ")" << std::endl;
+     }
 }
 void Maze::removeWall()
 {
@@ -186,27 +206,33 @@ void Maze::removeWall()
      *(find way to delete the wall between this and previous)
      */
 
+    //added std::cout for debugging
+
     //check if moved NORTH
     if(current.first == (previous.first-1))
     {
+        std::cout << "NORTH wall being removed." << std::endl;
         mazeArray[current.first][current.second] -= 4;
         mazeArray[previous.first][previous.second] -= 8;
     }
     //check if moved SOUTH
     else if(current.first == (previous.first+1))
     {
+        std::cout << "SOUTH wall being removed." << std::endl;
         mazeArray[current.first][current.second] -= 8;
         mazeArray[previous.first][previous.second] -= 4;
     }
     //check if moved EAST
     else if(current.second == (previous.second+1))
     {
+        std::cout << "EAST wall being removed." << std::endl;
         mazeArray[current.first][current.second] -= 1;
         mazeArray[previous.first][previous.second] -= 2;
     }
     //check if moved WEST
     else if(current.second == (previous.second-1))
     {
+        std::cout << "WEST wall being removed." << std::endl;
         mazeArray[current.first][current.second] -= 2;
         mazeArray[previous.first][previous.second] -= 1;
     }
