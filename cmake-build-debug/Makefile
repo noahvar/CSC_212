@@ -142,6 +142,58 @@ csc212_l1_2/fast:
 .PHONY : csc212_l1_2/fast
 
 #=============================================================================
+# Target rules for targets named l2
+
+# Build rule for target.
+l2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 l2
+.PHONY : l2
+
+# fast build rule for target.
+l2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\l2.dir\build.make CMakeFiles/l2.dir/build
+.PHONY : l2/fast
+
+#=============================================================================
+# Target rules for targets named l2_2
+
+# Build rule for target.
+l2_2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 l2_2
+.PHONY : l2_2
+
+# fast build rule for target.
+l2_2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\l2_2.dir\build.make CMakeFiles/l2_2.dir/build
+.PHONY : l2_2/fast
+
+#=============================================================================
+# Target rules for targets named l2_3
+
+# Build rule for target.
+l2_3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 l2_3
+.PHONY : l2_3
+
+# fast build rule for target.
+l2_3/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\l2_3.dir\build.make CMakeFiles/l2_3.dir/build
+.PHONY : l2_3/fast
+
+#=============================================================================
+# Target rules for targets named l2_4
+
+# Build rule for target.
+l2_4: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 l2_4
+.PHONY : l2_4
+
+# fast build rule for target.
+l2_4/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\l2_4.dir\build.make CMakeFiles/l2_4.dir/build
+.PHONY : l2_4/fast
+
+#=============================================================================
 # Target rules for targets named p1
 
 # Build rule for target.
@@ -229,6 +281,105 @@ l1/main2.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\csc212_l1_2.dir\build.make CMakeFiles/csc212_l1_2.dir/l1/main2.cpp.s
 .PHONY : l1/main2.cpp.s
 
+l2/MaxSub.obj: l2/MaxSub.cpp.obj
+.PHONY : l2/MaxSub.obj
+
+# target to build an object file
+l2/MaxSub.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\csc212_l1.dir\build.make CMakeFiles/csc212_l1.dir/l2/MaxSub.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\l2_4.dir\build.make CMakeFiles/l2_4.dir/l2/MaxSub.cpp.obj
+.PHONY : l2/MaxSub.cpp.obj
+
+l2/MaxSub.i: l2/MaxSub.cpp.i
+.PHONY : l2/MaxSub.i
+
+# target to preprocess a source file
+l2/MaxSub.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\csc212_l1.dir\build.make CMakeFiles/csc212_l1.dir/l2/MaxSub.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\l2_4.dir\build.make CMakeFiles/l2_4.dir/l2/MaxSub.cpp.i
+.PHONY : l2/MaxSub.cpp.i
+
+l2/MaxSub.s: l2/MaxSub.cpp.s
+.PHONY : l2/MaxSub.s
+
+# target to generate assembly for a file
+l2/MaxSub.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\csc212_l1.dir\build.make CMakeFiles/csc212_l1.dir/l2/MaxSub.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\l2_4.dir\build.make CMakeFiles/l2_4.dir/l2/MaxSub.cpp.s
+.PHONY : l2/MaxSub.cpp.s
+
+l2/csvPlot.obj: l2/csvPlot.cpp.obj
+.PHONY : l2/csvPlot.obj
+
+# target to build an object file
+l2/csvPlot.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\l2_3.dir\build.make CMakeFiles/l2_3.dir/l2/csvPlot.cpp.obj
+.PHONY : l2/csvPlot.cpp.obj
+
+l2/csvPlot.i: l2/csvPlot.cpp.i
+.PHONY : l2/csvPlot.i
+
+# target to preprocess a source file
+l2/csvPlot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\l2_3.dir\build.make CMakeFiles/l2_3.dir/l2/csvPlot.cpp.i
+.PHONY : l2/csvPlot.cpp.i
+
+l2/csvPlot.s: l2/csvPlot.cpp.s
+.PHONY : l2/csvPlot.s
+
+# target to generate assembly for a file
+l2/csvPlot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\l2_3.dir\build.make CMakeFiles/l2_3.dir/l2/csvPlot.cpp.s
+.PHONY : l2/csvPlot.cpp.s
+
+l2/euler.obj: l2/euler.cpp.obj
+.PHONY : l2/euler.obj
+
+# target to build an object file
+l2/euler.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\l2.dir\build.make CMakeFiles/l2.dir/l2/euler.cpp.obj
+.PHONY : l2/euler.cpp.obj
+
+l2/euler.i: l2/euler.cpp.i
+.PHONY : l2/euler.i
+
+# target to preprocess a source file
+l2/euler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\l2.dir\build.make CMakeFiles/l2.dir/l2/euler.cpp.i
+.PHONY : l2/euler.cpp.i
+
+l2/euler.s: l2/euler.cpp.s
+.PHONY : l2/euler.s
+
+# target to generate assembly for a file
+l2/euler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\l2.dir\build.make CMakeFiles/l2.dir/l2/euler.cpp.s
+.PHONY : l2/euler.cpp.s
+
+l2/fib.obj: l2/fib.cpp.obj
+.PHONY : l2/fib.obj
+
+# target to build an object file
+l2/fib.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\l2_2.dir\build.make CMakeFiles/l2_2.dir/l2/fib.cpp.obj
+.PHONY : l2/fib.cpp.obj
+
+l2/fib.i: l2/fib.cpp.i
+.PHONY : l2/fib.i
+
+# target to preprocess a source file
+l2/fib.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\l2_2.dir\build.make CMakeFiles/l2_2.dir/l2/fib.cpp.i
+.PHONY : l2/fib.cpp.i
+
+l2/fib.s: l2/fib.cpp.s
+.PHONY : l2/fib.s
+
+# target to generate assembly for a file
+l2/fib.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\l2_2.dir\build.make CMakeFiles/l2_2.dir/l2/fib.cpp.s
+.PHONY : l2/fib.cpp.s
+
 p1/main.obj: p1/main.cpp.obj
 .PHONY : p1/main.obj
 
@@ -287,6 +438,10 @@ help:
 	@echo ... rebuild_cache
 	@echo ... csc212_l1
 	@echo ... csc212_l1_2
+	@echo ... l2
+	@echo ... l2_2
+	@echo ... l2_3
+	@echo ... l2_4
 	@echo ... p1
 	@echo ... l1/Animal.obj
 	@echo ... l1/Animal.i
@@ -297,6 +452,18 @@ help:
 	@echo ... l1/main2.obj
 	@echo ... l1/main2.i
 	@echo ... l1/main2.s
+	@echo ... l2/MaxSub.obj
+	@echo ... l2/MaxSub.i
+	@echo ... l2/MaxSub.s
+	@echo ... l2/csvPlot.obj
+	@echo ... l2/csvPlot.i
+	@echo ... l2/csvPlot.s
+	@echo ... l2/euler.obj
+	@echo ... l2/euler.i
+	@echo ... l2/euler.s
+	@echo ... l2/fib.obj
+	@echo ... l2/fib.i
+	@echo ... l2/fib.s
 	@echo ... p1/main.obj
 	@echo ... p1/main.i
 	@echo ... p1/main.s
