@@ -1,0 +1,114 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.29"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "csc212_l1",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "csc212_l1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-csc212_l1-Debug-5d3ddb393ea4d2e0e9ec.json",
+					"name" : "csc212_l1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "csc212_l1_2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-csc212_l1_2-Debug-d1f6852612d586440205.json",
+					"name" : "csc212_l1_2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "l2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-l2-Debug-d0137cf4ad909cd4356b.json",
+					"name" : "l2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "l2_2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-l2_2-Debug-21825bdc90cd79d279a2.json",
+					"name" : "l2_2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "l2_3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-l2_3-Debug-871b6ee2249a4241a384.json",
+					"name" : "l2_3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "l2_4::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-l2_4-Debug-e351c09df529b5635755.json",
+					"name" : "l2_4",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "p1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-p1-Debug-d72f4f4d64a778fe4ae3.json",
+					"name" : "p1",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/noahv/Documents/GitHub/CSC_212/cmake-build-debug",
+		"source" : "C:/Users/noahv/Documents/GitHub/CSC_212"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
