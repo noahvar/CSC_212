@@ -1,63 +1,79 @@
+
+Conversation opened. 1 read message.
+
+Skip to content
+Using University of Rhode Island Mail with screen readers
+git
+External
+Noah Vargas
+	
+Attachments10:10 PM (0 minutes ago)
+	
+to me
+
+ 4 Attachments  •  Scanned by Gmail
+	
+
 #include "DynamicArray.h"
-#include <cstring>
+#include <string>
 #include <iostream>
 #include <ostream>
+#include <fstream>
+#include <vector>
+#include <sstream>
 
 int main(int argc, char *argv[])
 {
-    //create DEFAULT array
-    DynamicArray defArr;
-    //create CAPPED array
-    DynamicArray capArr(2, 10);
-    //create LENGTH array
-    DynamicArray lenArr(2, 5, 0);
+    // Extract the name of the file we'll be reading from the CLA
+    std::string file_name = argv[1];
 
-    std::cout << "cap before append: " << lenArr.get_capacity() << std::endl;
+    //read the file and check if file was opened
+    std::ifstream file(file_name);
+    if (!file.is_open()) {
+        std::cerr << "Error: Could not open file " << file_name << std::endl;
+        return 1;
+    }
 
-    lenArr.append(1);
-    lenArr.append(0);
-    lenArr.append(5);
-    lenArr.append(0);
-    lenArr.append(1);
+    // Create a vector to temporarily hold values
+    std::vector<int> inputs;
+    //create a string to hold the line im reading
+    std::string line;
+
+    // Read the current line from the file and put into inputs vector
+    while(std::getline(file, line))
+    {
+        int val;
+        std::istringstream ss(line);
+        while (ss >> val)
+        {
+            inputs.push_back(val);
+        }
+    }
+
+    DynamicArray arr;
+
+    for(std::size_t i = 0; i < inputs.size()/2; i++)
+    {
+        arr.append(inputs[i]);
+    }
+
+    for(std::size_t i = inputs.size()-1; i >= inputs.size()/2; i--)
+    {
+        arr.prepend(inputs[i]);
+    }
 
     unsigned int first;
+    arr.find_first_of(inputs[inputs.size()/3], &first);
+
     unsigned int last;
+    arr.find_last_of(inputs[inputs.size()/3], &last);
 
-    lenArr.find_first_of(5, &first);
-    lenArr.find_last_of(0, &last);
-
-    std::cout << "cap after append: " << lenArr.get_capacity() << std::endl;
-
-
-
-
-
-
-
-
-
-    //output DEFAULT array
-    // std::cout << "DEFAULT array: " << std::endl;
-    // for (int i = 0; i < defArr.get_length(); i++)
-    // {
-    //     std::cout << defArr[i] << " ";
-    // }
-    // std::cout << "\n" << std::endl;
-
-    //output CAPPED array
-    // std::cout << "CAPPED array: " << std::endl;
-    // for (int i = 0; i < capArr.get_length(); i++)
-    // {
-    //     std::cout << capArr[i] << " ";
-    // }
-    // std::cout << "\n" << std::endl;
-
-    //output LENGTH array
-    std::cout << "LENGTH array: " << std::endl;
-    for (int i = 0; i < lenArr.get_length(); i++)
-    {
-        std::cout << lenArr[i] << " ";
-    }
+    arr.remove_last();
+    arr.remove_first();
+    arr.clear();
 
     return 0;
 }
+
+main.cpp
+Displaying DynamicArray.cpp.

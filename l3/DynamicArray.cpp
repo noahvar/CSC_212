@@ -65,7 +65,7 @@ std::string DynamicArray::to_string() {
 
     // Initialize an empty string
     std::string str("");
-    for(int i = 0; i < m_length; i++)
+    for(unsigned int i = 0; i < m_length; i++)
     {
         str.append(std::to_string(m_data[i]));
     }
@@ -84,15 +84,17 @@ bool DynamicArray::find_first_of(int value, unsigned int *index) {
     }
 
     //iterate through the array and check if value = any of the array indices.
-    for(int i = 0; i < m_length; i++)
+    for(unsigned int i = 0; i < m_length; i++)
     {
         if(m_data[i] == value)
         {
             *index = i;
             found = true;
+            std::cout << "true  " << i-1 << std::endl;
             break;
         }
     }
+    std::cout << "false  " << index << std::endl;
     return found;
     //..............
     // TODO
@@ -102,16 +104,19 @@ bool DynamicArray::find_first_of(int value, unsigned int *index) {
 bool DynamicArray::find_last_of(int value, unsigned int *index) {
     bool found = false;
 
-    //iterate through the array and check if value = an array indices if it does set it equal to a value
+    //iterate through the array backwards and check if value = an array indices if it does set it equal to a value
     //continue until you've gone through whole array and then return the value.
-    for(int i = 0; i < get_length(); i++)
+    for(unsigned int i = m_length; i > 0; i--)
     {
         if(m_data[i] == value)
         {
             *index = i;
             found = true;
+            std::cout << "true  " << i-1 << std::endl;
+            break;
         }
     }
+    std::cout << "false  " << index << std::endl;
     return found;
     //..............
     // TODO
@@ -181,51 +186,65 @@ void DynamicArray::prepend(int value) {
         //scale cap by the scaling factor
         m_capacity = m_capacity * static_cast<unsigned int>(m_scaling_factor);
     }
-    //move all elements one index to the left
-    for(int i = m_length+1; i > 1; i--)
+    //move all elements one index to the right
+    for(unsigned int i = m_length; i > 0; i--)
     {
         m_data[i] = m_data[i-1];
     }
     //index 0 should be free now
     m_data[0] = value;
+    //increment length after adding new element
+    m_length++;
     //..............
     // TODO
     //..............
 }
 
 void DynamicArray::remove_last() {
+    //if length of array is 0 there is nothing to remove
+    if(m_length == 0)
+    {
+        return;
+    }
+    //remove last element by reducing size by one
+    m_length--;
     //..............
     // TODO
     //..............
-    // function remove_last
-    // if size == 0
-    //     return
-    // end if
-    // size = size - 1
-    // end function
 }
 
 void DynamicArray::remove_first() {
+    //check if there is nothing to remove
+    if(m_length == 0)
+    {
+        return;
+    }
+    //shift everything to the left effectively deleting the first index value
+    for(unsigned int i = 0; i < m_length-1; i++)
+    {
+        m_data[i] = m_data[i+1];
+    }
+    //decrease length because you removed
+    m_length--;
     //..............
     // TODO
     //..............
-    // function remove_first
-    // if size == 0
-    //     return
-    // end if
-    // for i = 0 to size - 2
-    //     array[i] = array[i + 1]
-    // end for
-    // size = size - 1
-    // end function
 }
 
 void DynamicArray::clear() {
+    if(m_length == 0)
+    {
+        return;
+    }
+    //deallocate memory being used by array
+    delete[] m_data;
+
+    //reset length and capacity
+    m_length = 0;
+    m_capacity = 0;
     //..............
     // TODO
     //..............
-    //if size = 0 exit
-    //set size = 0;
 }
 
 // Examples of "operator overloading"
