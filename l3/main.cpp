@@ -1,19 +1,3 @@
-
-Conversation opened. 1 read message.
-
-Skip to content
-Using University of Rhode Island Mail with screen readers
-git
-External
-Noah Vargas
-	
-Attachments10:10 PM (0 minutes ago)
-	
-to me
-
- 4 Attachments  •  Scanned by Gmail
-	
-
 #include "DynamicArray.h"
 #include <string>
 #include <iostream>
@@ -74,6 +58,3 @@ int main(int argc, char *argv[])
 
     return 0;
 }
-
-main.cpp
-Displaying DynamicArray.cpp.
