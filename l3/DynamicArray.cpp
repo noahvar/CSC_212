@@ -24,7 +24,7 @@ DynamicArray::DynamicArray(double scaling_factor, unsigned int length, int defau
     this->m_capacity = length;
     this->m_scaling_factor = scaling_factor;
     m_data = new int[length];
-    for (int i = 0; i < length; i++)
+    for (unsigned int i = 0; i < length; i++)
     {
         m_data[i] = default_value;
     }
@@ -68,6 +68,7 @@ std::string DynamicArray::to_string() {
     for(unsigned int i = 0; i < m_length; i++)
     {
         str.append(std::to_string(m_data[i]));
+        str.append(" ");
     }
     return str;
     //..............
@@ -90,11 +91,17 @@ bool DynamicArray::find_first_of(int value, unsigned int *index) {
         {
             *index = i;
             found = true;
-            std::cout << "true  " << i-1 << std::endl;
             break;
         }
     }
-    std::cout << "false  " << index << std::endl;
+    if(found == true)
+    {
+        std::cout << found << "\t" << *index << std::endl;
+    }
+    else
+    {
+        std::cout << found << "\t" << *index << std::endl;
+    }
     return found;
     //..............
     // TODO
@@ -112,11 +119,17 @@ bool DynamicArray::find_last_of(int value, unsigned int *index) {
         {
             *index = i;
             found = true;
-            std::cout << "true  " << i-1 << std::endl;
             break;
         }
     }
-    std::cout << "false  " << index << std::endl;
+    if(found == true)
+    {
+        std::cout << found << "\t" << *index << std::endl;
+    }
+    else
+    {
+        std::cout << found << "\t" << *index << std::endl;
+    }
     return found;
     //..............
     // TODO
@@ -129,7 +142,7 @@ void DynamicArray::append(int value) {
     {
         //copy data to new array
         int* new_data = new int[m_capacity * static_cast<unsigned int>(m_scaling_factor)];
-        for(int i = 0; i < m_length; i++)
+        for(unsigned int i = 0; i < m_length; i++)
         {
             new_data[i] = m_data[i];
         }
@@ -173,7 +186,7 @@ void DynamicArray::prepend(int value) {
     {
         //copy data to new array
         int* new_data = new int[m_capacity * static_cast<unsigned int>(m_scaling_factor)];
-        for(int i = 0; i < m_length; i++)
+        for(unsigned int i = 0; i < m_length; i++)
         {
             new_data[i] = m_data[i];
         }
@@ -232,7 +245,7 @@ void DynamicArray::remove_first() {
 }
 
 void DynamicArray::clear() {
-    if(m_length == 0)
+    if(m_capacity == 0)
     {
         return;
     }
@@ -242,6 +255,9 @@ void DynamicArray::clear() {
     //reset length and capacity
     m_length = 0;
     m_capacity = 0;
+
+    //prevent dangling pointer
+    m_data = nullptr;
     //..............
     // TODO
     //..............

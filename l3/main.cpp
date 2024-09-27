@@ -34,17 +34,37 @@ int main(int argc, char *argv[])
         }
     }
 
+    //to determine which constructor to use
     DynamicArray arr;
+
+    if(argc <= 2){
+        arr = DynamicArray();
+    }
+    else if(argc == 4){
+        double scaling_factor = std::stod(argv[2]);
+        unsigned int capacity = std::stoi(argv[3]);
+        arr = DynamicArray(scaling_factor, capacity);
+    }
+    else if(argc == 5){
+        double scaling_factor = std::stod(argv[2]);
+        unsigned int length = std::stoi(argv[3]);
+        int val = std::stoi(argv[4]);
+        arr = DynamicArray(scaling_factor, length, val);
+    }
 
     for(std::size_t i = 0; i < inputs.size()/2; i++)
     {
         arr.append(inputs[i]);
     }
+    std::cout << arr.to_string() << std::endl;
+    //std::cout << "APPENED: " << arr.to_string() << std::endl;
 
-    for(std::size_t i = inputs.size()-1; i >= inputs.size()/2; i--)
+    for(std::size_t i = inputs.size()/2; i < inputs.size(); i++)
     {
         arr.prepend(inputs[i]);
     }
+    std::cout << arr.to_string() << std::endl;
+    // std::cout << "PREPEND: " << arr.to_string() << std::endl;
 
     unsigned int first;
     arr.find_first_of(inputs[inputs.size()/3], &first);
@@ -53,8 +73,16 @@ int main(int argc, char *argv[])
     arr.find_last_of(inputs[inputs.size()/3], &last);
 
     arr.remove_last();
+    std::cout << arr.to_string() << std::endl;
+    // std::cout << "REMOVE LAST: " << arr.to_string() << std::endl;
+
     arr.remove_first();
+    std::cout << arr.to_string() << std::endl;
+    // std::cout << "REMOVE FIRST: " << arr.to_string() << std::endl;
+
     arr.clear();
+    std::cout << arr.to_string() << std::endl;
+    // std::cout << "CLEAR" << arr.to_string() << std::endl;
 
     return 0;
 }
