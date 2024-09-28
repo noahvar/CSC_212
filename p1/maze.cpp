@@ -79,7 +79,7 @@ void Maze::deallocateMaze()
 void Maze::printMaze(std::string filename)
 {
 
-    //open outpute file
+    //open output file
     std::ofstream outFile(filename);
 
     //check if it opened
@@ -137,7 +137,7 @@ void Maze::generateMaze(Maze& maze)
         if(!neighbors.empty())
         {
             //selecting random cell to move to
-            int idx = std::rand() / ((RAND_MAX + 1u) / neighbors.size());
+            unsigned long long idx = std::rand() / ((RAND_MAX + 1u) / neighbors.size());
 
             previous = current; //before moving cells remember this cell as previous
 
@@ -152,16 +152,16 @@ void Maze::generateMaze(Maze& maze)
 
         //temporary output to check maze after each wall removal
 
-        std::cout << "Moving from (" << previous.first << "," << previous.second << ") to (" << current.first << "," << current.second << ")\n";
-
-        std::cout << "Maze state after wall removal:" << std::endl;
-        for (int i = 0; i < n; ++i) {
-            for (int j = 0; j < m; ++j) {
-                std::cout << mazeArray[i][j] << " ";
-            }
-            std::cout << std::endl;
-        }
-        std::cout << std::endl;
+        // std::cout << "Moving from (" << previous.first << "," << previous.second << ") to (" << current.first << "," << current.second << ")\n";
+        //
+        // std::cout << "Maze state after wall removal:" << std::endl;
+        // for (int i = 0; i < n; ++i) {
+        //     for (int j = 0; j < m; ++j) {
+        //         std::cout << mazeArray[i][j] << " ";
+        //     }
+        //     std::cout << std::endl;
+        // }
+        // std::cout << std::endl;
 
         //repeat
     }
@@ -181,6 +181,8 @@ void Maze::addNeighbors()
     //remove neighbors that are out of range or that are visited
     for(int i = 0; i < neighbors.size();)
     {
+        //checks if a neighbor has n or m values less than 0, or greater than n or m which would be out bounds.
+        //also checks if neighbors cell has been marked as visited.
         if(neighbors[i].first < 0 || neighbors[i].second < 0 || neighbors[i].first == n || neighbors[i].second == m || visited[neighbors[i].first][neighbors[i].second] == true)
         {
             neighbors.erase(neighbors.begin() + i);
@@ -192,12 +194,22 @@ void Maze::addNeighbors()
     }
 
     // temporary for loop to see output of neighbors after each move.
-     std::cout << "Current position: (" << current.first << ", " << current.second << ")\n";
-     for(int i = 0; i < neighbors.size(); i++)
-     {
-         std::cout << "N" << i << ": (" << neighbors[i].first << "," << neighbors[i].second << ")" << std::endl;
-     }
+     // std::cout << "Current position: (" << current.first << ", " << current.second << ")\n";
+     // for(int i = 0; i < neighbors.size(); i++)
+     // {
+     //     std::cout << "N" << i << ": (" << neighbors[i].first << "," << neighbors[i].second << ")" << std::endl;
+     // }
 }
+
+//add enumeration for readability in removeWall();
+enum Direction {
+    NORTH = 4,
+    SOUTH = 8,
+    EAST = 1,
+    WEST = 2
+
+};
+
 void Maze::removeWall()
 {
     //delete wall between current and neighbors[idx]
@@ -206,35 +218,37 @@ void Maze::removeWall()
      *(find way to delete the wall between this and previous)
      */
 
-    //added std::cout for debugging
-
     //check if moved NORTH
     if(current.first == (previous.first-1))
     {
-        std::cout << "NORTH wall being removed." << std::endl;
-        mazeArray[current.first][current.second] -= 4;
-        mazeArray[previous.first][previous.second] -= 8;
+        //debug
+        // std::cout << "NORTH wall being removed." << std::endl;
+        mazeArray[current.first][current.second] -= NORTH;
+        mazeArray[previous.first][previous.second] -= SOUTH;
     }
     //check if moved SOUTH
     else if(current.first == (previous.first+1))
     {
-        std::cout << "SOUTH wall being removed." << std::endl;
-        mazeArray[current.first][current.second] -= 8;
-        mazeArray[previous.first][previous.second] -= 4;
+        //debug
+        // std::cout << "SOUTH wall being removed." << std::endl;
+        mazeArray[current.first][current.second] -= SOUTH;
+        mazeArray[previous.first][previous.second] -= NORTH;
     }
     //check if moved EAST
     else if(current.second == (previous.second+1))
     {
-        std::cout << "EAST wall being removed." << std::endl;
-        mazeArray[current.first][current.second] -= 1;
-        mazeArray[previous.first][previous.second] -= 2;
+        //debug
+        // std::cout << "EAST wall being removed." << std::endl;
+        mazeArray[current.first][current.second] -= EAST;
+        mazeArray[previous.first][previous.second] -= WEST;
     }
     //check if moved WEST
     else if(current.second == (previous.second-1))
     {
-        std::cout << "WEST wall being removed." << std::endl;
-        mazeArray[current.first][current.second] -= 2;
-        mazeArray[previous.first][previous.second] -= 1;
+        //debug
+        // std::cout << "WEST wall being removed." << std::endl;
+        mazeArray[current.first][current.second] -= WEST;
+        mazeArray[previous.first][previous.second] -= EAST;
     }
 
 }
