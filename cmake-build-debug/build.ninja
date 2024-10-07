@@ -262,6 +262,51 @@ build p1.exe: CXX_EXECUTABLE_LINKER__p1_Debug CMakeFiles/p1.dir/p1/main.cpp.obj 
   TARGET_IMPLIB = libp1.dll.a
   TARGET_PDB = p1.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target l4
+
+
+#############################################
+# Order-only phony target for l4
+
+build cmake_object_order_depends_target_l4: phony || .
+
+build CMakeFiles/l4.dir/l4/linked_list.cpp.obj: CXX_COMPILER__l4_unscanned_Debug C$:/Users/noahv/CLionProjects/CSC_212/l4/linked_list.cpp || cmake_object_order_depends_target_l4
+  DEP_FILE = CMakeFiles\l4.dir\l4\linked_list.cpp.obj.d
+  FLAGS = -g -std=gnu++11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\l4.dir
+  OBJECT_FILE_DIR = CMakeFiles\l4.dir\l4
+
+build CMakeFiles/l4.dir/l4/node.cpp.obj: CXX_COMPILER__l4_unscanned_Debug C$:/Users/noahv/CLionProjects/CSC_212/l4/node.cpp || cmake_object_order_depends_target_l4
+  DEP_FILE = CMakeFiles\l4.dir\l4\node.cpp.obj.d
+  FLAGS = -g -std=gnu++11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\l4.dir
+  OBJECT_FILE_DIR = CMakeFiles\l4.dir\l4
+
+build CMakeFiles/l4.dir/l4/main.cpp.obj: CXX_COMPILER__l4_unscanned_Debug C$:/Users/noahv/CLionProjects/CSC_212/l4/main.cpp || cmake_object_order_depends_target_l4
+  DEP_FILE = CMakeFiles\l4.dir\l4\main.cpp.obj.d
+  FLAGS = -g -std=gnu++11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\l4.dir
+  OBJECT_FILE_DIR = CMakeFiles\l4.dir\l4
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target l4
+
+
+#############################################
+# Link the executable l4.exe
+
+build l4.exe: CXX_EXECUTABLE_LINKER__l4_Debug CMakeFiles/l4.dir/l4/linked_list.cpp.obj CMakeFiles/l4.dir/l4/node.cpp.obj CMakeFiles/l4.dir/l4/main.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\l4.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = l4.exe
+  TARGET_IMPLIB = libl4.dll.a
+  TARGET_PDB = l4.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -298,6 +343,8 @@ build l2_2: phony l2_2.exe
 
 build l3: phony l3.exe
 
+build l4: phony l4.exe
+
 build p1: phony p1.exe
 
 # =============================================================================
@@ -308,7 +355,7 @@ build p1: phony p1.exe
 #############################################
 # Folder: C:/Users/noahv/CLionProjects/CSC_212/cmake-build-debug
 
-build all: phony csc212_l1.exe csc212_l1_2.exe l2.exe l2_2.exe l3.exe p1.exe
+build all: phony csc212_l1.exe csc212_l1_2.exe l2.exe l2_2.exe l3.exe p1.exe l4.exe
 
 # =============================================================================
 # Built-in targets

@@ -34,3 +34,8 @@ add_executable(p1
         p1/main.cpp
         p1/maze.cpp
         p1/maze.h)
+add_executable(l4 l4/linked_list.cpp l4/linked_list.h
+        l4/node.cpp
+        l4/node.h
+        l4/main.cpp
+)
