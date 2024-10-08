@@ -5,13 +5,17 @@
 // Initializes an empty linked list with the head set to nullptr and size to 0
 LinkedList::LinkedList(){
     // Initialize head pointer and size
+    this->head = nullptr;
+    this->size = 0;
 }
 
 // Constructor that creates a linked list with one node containing the given data
 // Initializes the head with the node containing data and sets the size to 1
 LinkedList::LinkedList(int data){
     // Create a new node with the provided data and set it as head
+    this->head = new Node(data);
     // Update size to 1
+    this->size = 1;
 }
 
 // Constructor that creates a linked list from a vector of integers
