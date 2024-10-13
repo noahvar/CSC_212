@@ -56,10 +56,10 @@ RM = "C:\Program Files\JetBrains\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe"
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\noahv\Documents\GitHub\CSC_212
+CMAKE_SOURCE_DIR = C:\Users\noahv\CLionProjects\CSC_212
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\noahv\Documents\GitHub\CSC_212\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\noahv\CLionProjects\CSC_212\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\noahv\Documents\GitHub\CSC_212\cmake-build-debug\CMakeFiles C:\Users\noahv\Documents\GitHub\CSC_212\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\noahv\CLionProjects\CSC_212\cmake-build-debug\CMakeFiles C:\Users\noahv\CLionProjects\CSC_212\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\noahv\Documents\GitHub\CSC_212\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\noahv\CLionProjects\CSC_212\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -168,30 +168,17 @@ l2_2/fast:
 .PHONY : l2_2/fast
 
 #=============================================================================
-# Target rules for targets named l2_3
+# Target rules for targets named l3
 
 # Build rule for target.
-l2_3: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 l2_3
-.PHONY : l2_3
+l3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 l3
+.PHONY : l3
 
 # fast build rule for target.
-l2_3/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\l2_3.dir\build.make CMakeFiles/l2_3.dir/build
-.PHONY : l2_3/fast
-
-#=============================================================================
-# Target rules for targets named l2_4
-
-# Build rule for target.
-l2_4: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 l2_4
-.PHONY : l2_4
-
-# fast build rule for target.
-l2_4/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\l2_4.dir\build.make CMakeFiles/l2_4.dir/build
-.PHONY : l2_4/fast
+l3/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\l3.dir\build.make CMakeFiles/l3.dir/build
+.PHONY : l3/fast
 
 #=============================================================================
 # Target rules for targets named p1
@@ -205,6 +192,32 @@ p1: cmake_check_build_system
 p1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\p1.dir\build.make CMakeFiles/p1.dir/build
 .PHONY : p1/fast
+
+#=============================================================================
+# Target rules for targets named l4
+
+# Build rule for target.
+l4: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 l4
+.PHONY : l4
+
+# fast build rule for target.
+l4/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\l4.dir\build.make CMakeFiles/l4.dir/build
+.PHONY : l4/fast
+
+#=============================================================================
+# Target rules for targets named l5
+
+# Build rule for target.
+l5: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 l5
+.PHONY : l5
+
+# fast build rule for target.
+l5/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\l5.dir\build.make CMakeFiles/l5.dir/build
+.PHONY : l5/fast
 
 l1/Animal.obj: l1/Animal.cpp.obj
 .PHONY : l1/Animal.obj
@@ -281,57 +294,6 @@ l1/main2.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\csc212_l1_2.dir\build.make CMakeFiles/csc212_l1_2.dir/l1/main2.cpp.s
 .PHONY : l1/main2.cpp.s
 
-l2/MaxSub.obj: l2/MaxSub.cpp.obj
-.PHONY : l2/MaxSub.obj
-
-# target to build an object file
-l2/MaxSub.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\csc212_l1.dir\build.make CMakeFiles/csc212_l1.dir/l2/MaxSub.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\l2_4.dir\build.make CMakeFiles/l2_4.dir/l2/MaxSub.cpp.obj
-.PHONY : l2/MaxSub.cpp.obj
-
-l2/MaxSub.i: l2/MaxSub.cpp.i
-.PHONY : l2/MaxSub.i
-
-# target to preprocess a source file
-l2/MaxSub.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\csc212_l1.dir\build.make CMakeFiles/csc212_l1.dir/l2/MaxSub.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\l2_4.dir\build.make CMakeFiles/l2_4.dir/l2/MaxSub.cpp.i
-.PHONY : l2/MaxSub.cpp.i
-
-l2/MaxSub.s: l2/MaxSub.cpp.s
-.PHONY : l2/MaxSub.s
-
-# target to generate assembly for a file
-l2/MaxSub.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\csc212_l1.dir\build.make CMakeFiles/csc212_l1.dir/l2/MaxSub.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\l2_4.dir\build.make CMakeFiles/l2_4.dir/l2/MaxSub.cpp.s
-.PHONY : l2/MaxSub.cpp.s
-
-l2/csvPlot.obj: l2/csvPlot.cpp.obj
-.PHONY : l2/csvPlot.obj
-
-# target to build an object file
-l2/csvPlot.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\l2_3.dir\build.make CMakeFiles/l2_3.dir/l2/csvPlot.cpp.obj
-.PHONY : l2/csvPlot.cpp.obj
-
-l2/csvPlot.i: l2/csvPlot.cpp.i
-.PHONY : l2/csvPlot.i
-
-# target to preprocess a source file
-l2/csvPlot.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\l2_3.dir\build.make CMakeFiles/l2_3.dir/l2/csvPlot.cpp.i
-.PHONY : l2/csvPlot.cpp.i
-
-l2/csvPlot.s: l2/csvPlot.cpp.s
-.PHONY : l2/csvPlot.s
-
-# target to generate assembly for a file
-l2/csvPlot.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\l2_3.dir\build.make CMakeFiles/l2_3.dir/l2/csvPlot.cpp.s
-.PHONY : l2/csvPlot.cpp.s
-
 l2/euler.obj: l2/euler.cpp.obj
 .PHONY : l2/euler.obj
 
@@ -379,6 +341,150 @@ l2/fib.s: l2/fib.cpp.s
 l2/fib.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\l2_2.dir\build.make CMakeFiles/l2_2.dir/l2/fib.cpp.s
 .PHONY : l2/fib.cpp.s
+
+l3/DynamicArray.obj: l3/DynamicArray.cpp.obj
+.PHONY : l3/DynamicArray.obj
+
+# target to build an object file
+l3/DynamicArray.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\l3.dir\build.make CMakeFiles/l3.dir/l3/DynamicArray.cpp.obj
+.PHONY : l3/DynamicArray.cpp.obj
+
+l3/DynamicArray.i: l3/DynamicArray.cpp.i
+.PHONY : l3/DynamicArray.i
+
+# target to preprocess a source file
+l3/DynamicArray.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\l3.dir\build.make CMakeFiles/l3.dir/l3/DynamicArray.cpp.i
+.PHONY : l3/DynamicArray.cpp.i
+
+l3/DynamicArray.s: l3/DynamicArray.cpp.s
+.PHONY : l3/DynamicArray.s
+
+# target to generate assembly for a file
+l3/DynamicArray.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\l3.dir\build.make CMakeFiles/l3.dir/l3/DynamicArray.cpp.s
+.PHONY : l3/DynamicArray.cpp.s
+
+l3/main.obj: l3/main.cpp.obj
+.PHONY : l3/main.obj
+
+# target to build an object file
+l3/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\l3.dir\build.make CMakeFiles/l3.dir/l3/main.cpp.obj
+.PHONY : l3/main.cpp.obj
+
+l3/main.i: l3/main.cpp.i
+.PHONY : l3/main.i
+
+# target to preprocess a source file
+l3/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\l3.dir\build.make CMakeFiles/l3.dir/l3/main.cpp.i
+.PHONY : l3/main.cpp.i
+
+l3/main.s: l3/main.cpp.s
+.PHONY : l3/main.s
+
+# target to generate assembly for a file
+l3/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\l3.dir\build.make CMakeFiles/l3.dir/l3/main.cpp.s
+.PHONY : l3/main.cpp.s
+
+l4/linked_list.obj: l4/linked_list.cpp.obj
+.PHONY : l4/linked_list.obj
+
+# target to build an object file
+l4/linked_list.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\l4.dir\build.make CMakeFiles/l4.dir/l4/linked_list.cpp.obj
+.PHONY : l4/linked_list.cpp.obj
+
+l4/linked_list.i: l4/linked_list.cpp.i
+.PHONY : l4/linked_list.i
+
+# target to preprocess a source file
+l4/linked_list.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\l4.dir\build.make CMakeFiles/l4.dir/l4/linked_list.cpp.i
+.PHONY : l4/linked_list.cpp.i
+
+l4/linked_list.s: l4/linked_list.cpp.s
+.PHONY : l4/linked_list.s
+
+# target to generate assembly for a file
+l4/linked_list.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\l4.dir\build.make CMakeFiles/l4.dir/l4/linked_list.cpp.s
+.PHONY : l4/linked_list.cpp.s
+
+l4/main.obj: l4/main.cpp.obj
+.PHONY : l4/main.obj
+
+# target to build an object file
+l4/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\l4.dir\build.make CMakeFiles/l4.dir/l4/main.cpp.obj
+.PHONY : l4/main.cpp.obj
+
+l4/main.i: l4/main.cpp.i
+.PHONY : l4/main.i
+
+# target to preprocess a source file
+l4/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\l4.dir\build.make CMakeFiles/l4.dir/l4/main.cpp.i
+.PHONY : l4/main.cpp.i
+
+l4/main.s: l4/main.cpp.s
+.PHONY : l4/main.s
+
+# target to generate assembly for a file
+l4/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\l4.dir\build.make CMakeFiles/l4.dir/l4/main.cpp.s
+.PHONY : l4/main.cpp.s
+
+l4/node.obj: l4/node.cpp.obj
+.PHONY : l4/node.obj
+
+# target to build an object file
+l4/node.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\l4.dir\build.make CMakeFiles/l4.dir/l4/node.cpp.obj
+.PHONY : l4/node.cpp.obj
+
+l4/node.i: l4/node.cpp.i
+.PHONY : l4/node.i
+
+# target to preprocess a source file
+l4/node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\l4.dir\build.make CMakeFiles/l4.dir/l4/node.cpp.i
+.PHONY : l4/node.cpp.i
+
+l4/node.s: l4/node.cpp.s
+.PHONY : l4/node.s
+
+# target to generate assembly for a file
+l4/node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\l4.dir\build.make CMakeFiles/l4.dir/l4/node.cpp.s
+.PHONY : l4/node.cpp.s
+
+l5/hanoi.obj: l5/hanoi.cpp.obj
+.PHONY : l5/hanoi.obj
+
+# target to build an object file
+l5/hanoi.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\l5.dir\build.make CMakeFiles/l5.dir/l5/hanoi.cpp.obj
+.PHONY : l5/hanoi.cpp.obj
+
+l5/hanoi.i: l5/hanoi.cpp.i
+.PHONY : l5/hanoi.i
+
+# target to preprocess a source file
+l5/hanoi.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\l5.dir\build.make CMakeFiles/l5.dir/l5/hanoi.cpp.i
+.PHONY : l5/hanoi.cpp.i
+
+l5/hanoi.s: l5/hanoi.cpp.s
+.PHONY : l5/hanoi.s
+
+# target to generate assembly for a file
+l5/hanoi.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\l5.dir\build.make CMakeFiles/l5.dir/l5/hanoi.cpp.s
+.PHONY : l5/hanoi.cpp.s
 
 p1/main.obj: p1/main.cpp.obj
 .PHONY : p1/main.obj
@@ -440,8 +546,9 @@ help:
 	@echo ... csc212_l1_2
 	@echo ... l2
 	@echo ... l2_2
-	@echo ... l2_3
-	@echo ... l2_4
+	@echo ... l3
+	@echo ... l4
+	@echo ... l5
 	@echo ... p1
 	@echo ... l1/Animal.obj
 	@echo ... l1/Animal.i
@@ -452,18 +559,30 @@ help:
 	@echo ... l1/main2.obj
 	@echo ... l1/main2.i
 	@echo ... l1/main2.s
-	@echo ... l2/MaxSub.obj
-	@echo ... l2/MaxSub.i
-	@echo ... l2/MaxSub.s
-	@echo ... l2/csvPlot.obj
-	@echo ... l2/csvPlot.i
-	@echo ... l2/csvPlot.s
 	@echo ... l2/euler.obj
 	@echo ... l2/euler.i
 	@echo ... l2/euler.s
 	@echo ... l2/fib.obj
 	@echo ... l2/fib.i
 	@echo ... l2/fib.s
+	@echo ... l3/DynamicArray.obj
+	@echo ... l3/DynamicArray.i
+	@echo ... l3/DynamicArray.s
+	@echo ... l3/main.obj
+	@echo ... l3/main.i
+	@echo ... l3/main.s
+	@echo ... l4/linked_list.obj
+	@echo ... l4/linked_list.i
+	@echo ... l4/linked_list.s
+	@echo ... l4/main.obj
+	@echo ... l4/main.i
+	@echo ... l4/main.s
+	@echo ... l4/node.obj
+	@echo ... l4/node.i
+	@echo ... l4/node.s
+	@echo ... l5/hanoi.obj
+	@echo ... l5/hanoi.i
+	@echo ... l5/hanoi.s
 	@echo ... p1/main.obj
 	@echo ... p1/main.i
 	@echo ... p1/main.s

@@ -30,6 +30,9 @@ public:
     // If `idx` is greater than the current size, appends the node to the end
     void insert(int data, int idx); // For any `idx` > `size`, append the value
 
+    //helper function to with node deletion(recursion)
+    void deleteNodes(Node* node);
+
     // Removes the node containing `data` from the list
     void remove(int data);
 
@@ -37,7 +40,7 @@ public:
     bool contains(int data);
 
     // Returns the number of elements in the list
-    int get_size();
+    unsigned int get_size();
 
     // Returns a string representation of the list
     std::string to_string();

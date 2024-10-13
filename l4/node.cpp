@@ -23,8 +23,7 @@ Node::Node(int data, Node* next){
 
 // Destructor
 // Recursively deletes the next node if it exists
-Node::~Node(){
-    if(this->next != nullptr){
-        delete this->next;
-    }
+Node::~Node()
+{
+    //handled in linklist destructor
 }

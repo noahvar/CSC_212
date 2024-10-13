@@ -37,5 +37,6 @@ add_executable(p1
 add_executable(l4 l4/linked_list.cpp l4/linked_list.h
         l4/node.cpp
         l4/node.h
-        l4/main.cpp
-)
+        l4/main.cpp)
+add_executable(l5
+        l5/hanoi.cpp)
