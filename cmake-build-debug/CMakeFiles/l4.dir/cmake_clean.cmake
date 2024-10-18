@@ -1,14 +1,12 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/l4.dir/l4/linked_list.cpp.obj"
-  "CMakeFiles/l4.dir/l4/linked_list.cpp.obj.d"
-  "CMakeFiles/l4.dir/l4/main.cpp.obj"
-  "CMakeFiles/l4.dir/l4/main.cpp.obj.d"
-  "CMakeFiles/l4.dir/l4/node.cpp.obj"
-  "CMakeFiles/l4.dir/l4/node.cpp.obj.d"
-  "l4.exe"
-  "l4.exe.manifest"
+  "CMakeFiles/l4.dir/l4/linked_list.cpp.o"
+  "CMakeFiles/l4.dir/l4/linked_list.cpp.o.d"
+  "CMakeFiles/l4.dir/l4/main.cpp.o"
+  "CMakeFiles/l4.dir/l4/main.cpp.o.d"
+  "CMakeFiles/l4.dir/l4/node.cpp.o"
+  "CMakeFiles/l4.dir/l4/node.cpp.o.d"
+  "l4"
   "l4.pdb"
-  "libl4.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

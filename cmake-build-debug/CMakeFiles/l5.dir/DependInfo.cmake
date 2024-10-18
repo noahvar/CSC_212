@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/noahv/CLionProjects/CSC_212/l5/hanoi.cpp" "CMakeFiles/l5.dir/l5/hanoi.cpp.obj" "gcc" "CMakeFiles/l5.dir/l5/hanoi.cpp.obj.d"
+  "/Users/noahvar/CLionProjects/CSC_212/l5/hanoi.cpp" "CMakeFiles/l5.dir/l5/hanoi.cpp.o" "gcc" "CMakeFiles/l5.dir/l5/hanoi.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

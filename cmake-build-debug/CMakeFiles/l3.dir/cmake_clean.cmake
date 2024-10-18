@@ -1,12 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/l3.dir/l3/DynamicArray.cpp.obj"
-  "CMakeFiles/l3.dir/l3/DynamicArray.cpp.obj.d"
-  "CMakeFiles/l3.dir/l3/main.cpp.obj"
-  "CMakeFiles/l3.dir/l3/main.cpp.obj.d"
-  "l3.exe"
-  "l3.exe.manifest"
+  "CMakeFiles/l3.dir/l3/DynamicArray.cpp.o"
+  "CMakeFiles/l3.dir/l3/DynamicArray.cpp.o.d"
+  "CMakeFiles/l3.dir/l3/main.cpp.o"
+  "CMakeFiles/l3.dir/l3/main.cpp.o.d"
+  "l3"
   "l3.pdb"
-  "libl3.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

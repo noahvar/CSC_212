@@ -1,10 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/l2.dir/l2/euler.cpp.obj"
-  "CMakeFiles/l2.dir/l2/euler.cpp.obj.d"
-  "l2.exe"
-  "l2.exe.manifest"
+  "CMakeFiles/l2.dir/l2/euler.cpp.o"
+  "CMakeFiles/l2.dir/l2/euler.cpp.o.d"
+  "l2"
   "l2.pdb"
-  "libl2.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

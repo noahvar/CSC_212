@@ -1,0 +1,132 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.29"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "csc212_l1",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "csc212_l1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-csc212_l1-Debug-a5a41e13adb29cc35d7e.json",
+					"name" : "csc212_l1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "csc212_l1_2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-csc212_l1_2-Debug-3ed37aac0b5fdaf8f9ae.json",
+					"name" : "csc212_l1_2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "l2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-l2-Debug-c2ad19b58261401a46a0.json",
+					"name" : "l2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "l2_2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-l2_2-Debug-34d06820f58fc4b3be39.json",
+					"name" : "l2_2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "l3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-l3-Debug-60b24309be469dc16c33.json",
+					"name" : "l3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "l4::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-l4-Debug-d93cdfba2e6287a04c82.json",
+					"name" : "l4",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "l5::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-l5-Debug-1175e7f73e0b4cf228f8.json",
+					"name" : "l5",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "l6::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-l6-Debug-bfaf1d534b87cfdedc59.json",
+					"name" : "l6",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "p1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-p1-Debug-5e004790b95233a705ba.json",
+					"name" : "p1",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/noahvar/CLionProjects/CSC_212/cmake-build-debug",
+		"source" : "/Users/noahvar/CLionProjects/CSC_212"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

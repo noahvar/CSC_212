@@ -1,12 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/csc212_l1_2.dir/l1/Animal.cpp.obj"
-  "CMakeFiles/csc212_l1_2.dir/l1/Animal.cpp.obj.d"
-  "CMakeFiles/csc212_l1_2.dir/l1/main2.cpp.obj"
-  "CMakeFiles/csc212_l1_2.dir/l1/main2.cpp.obj.d"
-  "csc212_l1_2.exe"
-  "csc212_l1_2.exe.manifest"
+  "CMakeFiles/csc212_l1_2.dir/l1/Animal.cpp.o"
+  "CMakeFiles/csc212_l1_2.dir/l1/Animal.cpp.o.d"
+  "CMakeFiles/csc212_l1_2.dir/l1/main2.cpp.o"
+  "CMakeFiles/csc212_l1_2.dir/l1/main2.cpp.o.d"
+  "csc212_l1_2"
   "csc212_l1_2.pdb"
-  "libcsc212_l1_2.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

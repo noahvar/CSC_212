@@ -1,10 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/l5.dir/l5/hanoi.cpp.obj"
-  "CMakeFiles/l5.dir/l5/hanoi.cpp.obj.d"
-  "l5.exe"
-  "l5.exe.manifest"
+  "CMakeFiles/l5.dir/l5/hanoi.cpp.o"
+  "CMakeFiles/l5.dir/l5/hanoi.cpp.o.d"
+  "l5"
   "l5.pdb"
-  "libl5.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.
