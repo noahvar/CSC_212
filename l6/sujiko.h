@@ -21,5 +21,6 @@ public:
     ~Sujiko();
 
     bool solve(unsigned int cell);
+    bool isValid();
     void display_board();
 };
