@@ -45,4 +45,5 @@ add_executable(l5
 add_executable(l6
         l6/main.cpp
         l6/sujiko.cpp
-        l6/sujiko.h)
+        l6/sujiko.h
+        l6/sujikoTest.txt)

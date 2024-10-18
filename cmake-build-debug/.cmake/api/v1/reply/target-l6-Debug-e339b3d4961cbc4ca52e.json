@@ -50,7 +50,7 @@
 			"sourceIndexes" : 
 			[
 				0,
-				2
+				1
 			]
 		}
 	],
@@ -84,19 +84,32 @@
 			"sourceIndexes" : 
 			[
 				0,
-				2
+				1
 			]
 		},
 		{
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				1
+				2
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				3
 			]
 		}
 	],
 	"sources" : 
 	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "l6/main.cpp",
+			"sourceGroupIndex" : 0
+		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
@@ -110,9 +123,8 @@
 		},
 		{
 			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "l6/main.cpp",
-			"sourceGroupIndex" : 0
+			"path" : "l6/sujikoTest.txt",
+			"sourceGroupIndex" : 2
 		}
 	],
 	"type" : "EXECUTABLE"

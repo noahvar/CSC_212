@@ -69,24 +69,10 @@ include CMakeFiles/l6.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/l6.dir/flags.make
 
-CMakeFiles/l6.dir/l6/sujiko.cpp.o: CMakeFiles/l6.dir/flags.make
-CMakeFiles/l6.dir/l6/sujiko.cpp.o: /Users/noahvar/CLionProjects/CSC_212/l6/sujiko.cpp
-CMakeFiles/l6.dir/l6/sujiko.cpp.o: CMakeFiles/l6.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/noahvar/CLionProjects/CSC_212/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/l6.dir/l6/sujiko.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/l6.dir/l6/sujiko.cpp.o -MF CMakeFiles/l6.dir/l6/sujiko.cpp.o.d -o CMakeFiles/l6.dir/l6/sujiko.cpp.o -c /Users/noahvar/CLionProjects/CSC_212/l6/sujiko.cpp
-
-CMakeFiles/l6.dir/l6/sujiko.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/l6.dir/l6/sujiko.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/noahvar/CLionProjects/CSC_212/l6/sujiko.cpp > CMakeFiles/l6.dir/l6/sujiko.cpp.i
-
-CMakeFiles/l6.dir/l6/sujiko.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/l6.dir/l6/sujiko.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/noahvar/CLionProjects/CSC_212/l6/sujiko.cpp -o CMakeFiles/l6.dir/l6/sujiko.cpp.s
-
 CMakeFiles/l6.dir/l6/main.cpp.o: CMakeFiles/l6.dir/flags.make
 CMakeFiles/l6.dir/l6/main.cpp.o: /Users/noahvar/CLionProjects/CSC_212/l6/main.cpp
 CMakeFiles/l6.dir/l6/main.cpp.o: CMakeFiles/l6.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/noahvar/CLionProjects/CSC_212/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/l6.dir/l6/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/noahvar/CLionProjects/CSC_212/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/l6.dir/l6/main.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/l6.dir/l6/main.cpp.o -MF CMakeFiles/l6.dir/l6/main.cpp.o.d -o CMakeFiles/l6.dir/l6/main.cpp.o -c /Users/noahvar/CLionProjects/CSC_212/l6/main.cpp
 
 CMakeFiles/l6.dir/l6/main.cpp.i: cmake_force
@@ -97,16 +83,30 @@ CMakeFiles/l6.dir/l6/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/l6.dir/l6/main.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/noahvar/CLionProjects/CSC_212/l6/main.cpp -o CMakeFiles/l6.dir/l6/main.cpp.s
 
+CMakeFiles/l6.dir/l6/sujiko.cpp.o: CMakeFiles/l6.dir/flags.make
+CMakeFiles/l6.dir/l6/sujiko.cpp.o: /Users/noahvar/CLionProjects/CSC_212/l6/sujiko.cpp
+CMakeFiles/l6.dir/l6/sujiko.cpp.o: CMakeFiles/l6.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/noahvar/CLionProjects/CSC_212/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/l6.dir/l6/sujiko.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/l6.dir/l6/sujiko.cpp.o -MF CMakeFiles/l6.dir/l6/sujiko.cpp.o.d -o CMakeFiles/l6.dir/l6/sujiko.cpp.o -c /Users/noahvar/CLionProjects/CSC_212/l6/sujiko.cpp
+
+CMakeFiles/l6.dir/l6/sujiko.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/l6.dir/l6/sujiko.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/noahvar/CLionProjects/CSC_212/l6/sujiko.cpp > CMakeFiles/l6.dir/l6/sujiko.cpp.i
+
+CMakeFiles/l6.dir/l6/sujiko.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/l6.dir/l6/sujiko.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/noahvar/CLionProjects/CSC_212/l6/sujiko.cpp -o CMakeFiles/l6.dir/l6/sujiko.cpp.s
+
 # Object files for target l6
 l6_OBJECTS = \
-"CMakeFiles/l6.dir/l6/sujiko.cpp.o" \
-"CMakeFiles/l6.dir/l6/main.cpp.o"
+"CMakeFiles/l6.dir/l6/main.cpp.o" \
+"CMakeFiles/l6.dir/l6/sujiko.cpp.o"
 
 # External object files for target l6
 l6_EXTERNAL_OBJECTS =
 
-l6: CMakeFiles/l6.dir/l6/sujiko.cpp.o
 l6: CMakeFiles/l6.dir/l6/main.cpp.o
+l6: CMakeFiles/l6.dir/l6/sujiko.cpp.o
 l6: CMakeFiles/l6.dir/build.make
 l6: CMakeFiles/l6.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/noahvar/CLionProjects/CSC_212/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable l6"
