@@ -17,26 +17,38 @@ NQueens::NQueens(unsigned int n){
 
 bool NQueens::solve_rec(int col){
     //If all queens are placed then return true
-
+    if(col == board_size)
+    {
+        return true;
+    }
 
     // Attempt to place a Queen in every row in this
     // column, one at a time.
+    for(int i = 0; i < board_size; i++)
+    {
+        // Can the Queen safely be placed here?
+        if(is_valid_row(i,col))
+        {
+            // Place the Queen
+            (*board)[i][col] = 1;
+            // //debug
+            // display_board();
+            // std::cout << std::endl;
+            // Recursively move to the next column
+            // If it returns 1, then a Queen was successfully
+            // placed on that column as well
+            if(solve_rec(col+1))
+            {
+                return true;
+            }
 
-    // Can the Queen safely be placed here?
-
-    // Place the Queen
-
-
-    // Recursively move to the next column
-    // If it returns 1, then a Queen was succesfully
-    // placed on that column as well
-
-
-    // If we did not return in the above statement,
-    // we need to remove the queen from the current column
-    // and place it on the next row
-    // Backgtrack
-
+            // If we did not return in the above statement,
+            // we need to remove the queen from the current column
+            // and place it on the next row
+            // Backtrack
+            (*board)[i][col] = 0;
+        }
+    }
 
     // If the queen cannot be placed in any row in this column
     return false;
