@@ -227,7 +227,7 @@ CMakeFiles/l3.dir/clean:
 CMakeFiles/p1.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/p1.dir/build.make CMakeFiles/p1.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/p1.dir/build.make CMakeFiles/p1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/noahvar/CLionProjects/CSC_212/cmake-build-debug/CMakeFiles --progress-num=23,24,25 "Built target p1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/noahvar/CLionProjects/CSC_212/cmake-build-debug/CMakeFiles --progress-num=24,25,26 "Built target p1"
 .PHONY : CMakeFiles/p1.dir/all
 
 # Build rule for subdir invocation for target.
@@ -305,12 +305,12 @@ CMakeFiles/l5.dir/clean:
 CMakeFiles/l6.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/l6.dir/build.make CMakeFiles/l6.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/l6.dir/build.make CMakeFiles/l6.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/noahvar/CLionProjects/CSC_212/cmake-build-debug/CMakeFiles --progress-num=20,21,22 "Built target l6"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/noahvar/CLionProjects/CSC_212/cmake-build-debug/CMakeFiles --progress-num=20,21,22,23 "Built target l6"
 .PHONY : CMakeFiles/l6.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/l6.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/noahvar/CLionProjects/CSC_212/cmake-build-debug/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/noahvar/CLionProjects/CSC_212/cmake-build-debug/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/l6.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/noahvar/CLionProjects/CSC_212/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/l6.dir/rule
