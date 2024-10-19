@@ -19,14 +19,10 @@ int main(int argc, char * argv[])
     // Q.display_board();
 
     //SUDUKO
-
-    std::string f_name(argv[1]);
-
-    Sudoku s(f_name);
-
-    s.solve();
-
-    s.display_board();
+    // std::string f_name(argv[1]);
+    // Sudoku s(f_name);
+    // s.solve(0);
+    // s.display_board();
 
     return 0;
 }

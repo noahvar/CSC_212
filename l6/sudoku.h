@@ -18,6 +18,6 @@ public:
     ~Sudoku();
 
     // Feel free to change this definition
-    bool solve();
+    bool solve(unsigned int cell);
     void display_board();
 };
