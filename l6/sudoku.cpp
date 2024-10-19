@@ -13,9 +13,30 @@ Sudoku::~Sudoku() {
 
 Sudoku::Sudoku(std::string f_name) {
     // Generate a board from the give file
+
+    //get the file name
+    std::ifstream file(f_name);
+    std::string line;
+
+    int row = 0;
+    int value;
+    while(std::getline(file, line) && row < 9)
+    {
+        std::stringstream inputs(line);
+        for(int col = 0; col < 9; col++)
+        {
+            if(inputs >> value)
+            {
+                board[row][col] = value;
+            }
+        }
+        row++;
+    }
 }
 
 bool Sudoku::solve() {
+
+
 
     return false;
 }
