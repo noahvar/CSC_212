@@ -78,9 +78,9 @@ bool Sujiko::solve(unsigned int cell){
     for(unsigned int element : missing)
     {
         board[row][col] = element;
-        //debug to show the board
-        display_board();
-        std::cout << std::endl;
+        // debug to show the board
+        // display_board();
+        // std::cout << std::endl;
         //1.3) Recursively call this function with the new board. If we obtain True, also return True.
         if(solve(cell+1))
         {
