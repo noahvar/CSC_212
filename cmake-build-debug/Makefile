@@ -548,6 +548,30 @@ l6/n_queens.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/l6.dir/build.make CMakeFiles/l6.dir/l6/n_queens.cpp.s
 .PHONY : l6/n_queens.cpp.s
 
+l6/sudoku.o: l6/sudoku.cpp.o
+.PHONY : l6/sudoku.o
+
+# target to build an object file
+l6/sudoku.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/l6.dir/build.make CMakeFiles/l6.dir/l6/sudoku.cpp.o
+.PHONY : l6/sudoku.cpp.o
+
+l6/sudoku.i: l6/sudoku.cpp.i
+.PHONY : l6/sudoku.i
+
+# target to preprocess a source file
+l6/sudoku.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/l6.dir/build.make CMakeFiles/l6.dir/l6/sudoku.cpp.i
+.PHONY : l6/sudoku.cpp.i
+
+l6/sudoku.s: l6/sudoku.cpp.s
+.PHONY : l6/sudoku.s
+
+# target to generate assembly for a file
+l6/sudoku.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/l6.dir/build.make CMakeFiles/l6.dir/l6/sudoku.cpp.s
+.PHONY : l6/sudoku.cpp.s
+
 l6/sujiko.o: l6/sujiko.cpp.o
 .PHONY : l6/sujiko.o
 
@@ -676,6 +700,9 @@ help:
 	@echo "... l6/n_queens.o"
 	@echo "... l6/n_queens.i"
 	@echo "... l6/n_queens.s"
+	@echo "... l6/sudoku.o"
+	@echo "... l6/sudoku.i"
+	@echo "... l6/sudoku.s"
 	@echo "... l6/sujiko.o"
 	@echo "... l6/sujiko.i"
 	@echo "... l6/sujiko.s"

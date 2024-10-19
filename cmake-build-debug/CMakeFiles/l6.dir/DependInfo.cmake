@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/noahvar/CLionProjects/CSC_212/l6/main.cpp" "CMakeFiles/l6.dir/l6/main.cpp.o" "gcc" "CMakeFiles/l6.dir/l6/main.cpp.o.d"
   "/Users/noahvar/CLionProjects/CSC_212/l6/n_queens.cpp" "CMakeFiles/l6.dir/l6/n_queens.cpp.o" "gcc" "CMakeFiles/l6.dir/l6/n_queens.cpp.o.d"
+  "/Users/noahvar/CLionProjects/CSC_212/l6/sudoku.cpp" "CMakeFiles/l6.dir/l6/sudoku.cpp.o" "gcc" "CMakeFiles/l6.dir/l6/sudoku.cpp.o.d"
   "/Users/noahvar/CLionProjects/CSC_212/l6/sujiko.cpp" "CMakeFiles/l6.dir/l6/sujiko.cpp.o" "gcc" "CMakeFiles/l6.dir/l6/sujiko.cpp.o.d"
   )
 
