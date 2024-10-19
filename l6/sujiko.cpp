@@ -57,7 +57,7 @@ bool Sujiko::solve(unsigned int cell){
         {
             if(board[r][c] != 0)
             {
-                missing.erase(std::remove(missing.begin(), missing.end(), board[r][c]));
+                missing.erase(std::remove(missing.begin(), missing.end(), board[r][c]), missing.end());
             }
         }
     }

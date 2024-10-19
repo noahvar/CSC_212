@@ -1,8 +1,9 @@
+#include <iostream>
 #include <vector>
-#include <string>
+#include <algorithm>
 #include <fstream>
 #include <sstream>
-#include <iostream>
+#include <string>
 
 class Sujiko{
 private:

@@ -62,7 +62,7 @@ bool Sudoku::solve(unsigned int cell) {
             board[row][col] = i;
             // debug
             // display_board();
-            std::cout << std::endl;
+            // std::cout << std::endl;
             // Recurse to the next empty cell.
             if(solve(cell+1))
             {
